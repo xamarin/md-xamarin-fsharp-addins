@@ -7,11 +7,6 @@
        description = "F# support extension to Xamarin Android applications."
        category    = "Mobile Development"
        version     = "4.0">
-       
-	<Header>
-		<Icon32>icons/monodroid-32.png</Icon32>
-		<PreviewImage>icons/mfa-pro.png</PreviewImage>
-	</Header>
 
 	<Dependencies>
 		<Addin id="Core" version="4.0"/>
