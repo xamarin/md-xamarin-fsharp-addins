@@ -1,0 +1,14 @@
+<AddinProject appVersion="4.0">
+	<Project platforms="Mac">
+		<AddinFile>build/MonoDevelop.FSharp.Android.dll</AddinFile>
+		<AddinFile>build/MonoDevelop.FSharp.MonoTouch.dll</AddinFile>
+		<AddinFile>build/MonoDevelop.FSharp.MonoMac.dll</AddinFile>
+		<BuildFile>md-xamarin-fsharp-addins.sln</BuildFile>
+		<BuildConfiguration>Debug</BuildConfiguration>
+	</Project>
+	<Project platforms="Windows">
+		<AddinFile>build/MonoDevelop.FSharp.Android.dll</AddinFile>
+		<BuildFile>md-xamarin-fsharp-addins.sln</BuildFile>
+		<BuildConfiguration>Debug</BuildConfiguration>
+	</Project>
+</AddinProject>

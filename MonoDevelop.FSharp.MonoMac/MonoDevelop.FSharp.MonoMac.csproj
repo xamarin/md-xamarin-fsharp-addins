@@ -51,15 +51,6 @@
     <None Include="templates\fsharp\MonoMac\MonoMacApplicationManifest.xft.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="templates\fsharp\MonoMac\MonoMacDocument.xpt.xml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="templates\fsharp\MonoMac\MonoMacDocumentWindowXib.xft.xml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="templates\fsharp\MonoMac\MonoMacEmptyXib.xft.xml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
     <None Include="templates\fsharp\MonoMac\MonoMacPlist.xft.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
@@ -69,31 +60,10 @@
     <None Include="templates\fsharp\MonoMac\MonoMacProjectEmpty.xpt.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="templates\fsharp\MonoMac\MonoMacViewWithControllerXib.xft.xml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="templates\fsharp\MonoMac\MonoMacViewXib.xft.xml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="templates\fsharp\MonoMac\MonoMacWindowWithControllerXib.xft.xml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="templates\fsharp\MonoMac\MonoMacWindowXib.xft.xml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
     <None Include="templates\fsharp\XamMac\XamMacApplicationDocumentManifest.xft.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="templates\fsharp\XamMac\XamMacApplicationManifest.xft.xml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="templates\fsharp\XamMac\XamMacDocument.xpt.xml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="templates\fsharp\XamMac\XamMacDocumentWindowXib.xft.xml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="templates\fsharp\XamMac\XamMacEmptyXib.xft.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="templates\fsharp\XamMac\XamMacPlist.xft.xml">
@@ -103,18 +73,6 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="templates\fsharp\XamMac\XamMacProjectEmpty.xpt.xml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="templates\fsharp\XamMac\XamMacViewWithControllerXib.xft.xml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="templates\fsharp\XamMac\XamMacViewXib.xft.xml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="templates\fsharp\XamMac\XamMacWindowWithControllerXib.xft.xml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="templates\fsharp\XamMac\XamMacWindowXib.xft.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>

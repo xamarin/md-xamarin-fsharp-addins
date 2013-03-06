@@ -11,31 +11,15 @@
 	<Runtime>
 		<Import file="templates/fsharp/MonoMac/MonoMacProject.xpt.xml"/>
 		<Import file="templates/fsharp/MonoMac/MonoMacProjectEmpty.xpt.xml"/>
-		<Import file="templates/fsharp/MonoMac/MonoMacViewXib.xft.xml"/>
-		<Import file="templates/fsharp/MonoMac/MonoMacViewWithControllerXib.xft.xml"/>
-		<Import file="templates/fsharp/MonoMac/MonoMacWindowXib.xft.xml"/>
-		<Import file="templates/fsharp/MonoMac/MonoMacWindowWithControllerXib.xft.xml"/>
-		<Import file="templates/fsharp/MonoMac/MonoMacDocumentWindowXib.xft.xml"/>
-		<Import file="templates/fsharp/MonoMac/MonoMacEmptyXib.xft.xml"/>
 		<Import file="templates/fsharp/MonoMac/MonoMacApplicationManifest.xft.xml"/>
 		<Import file="templates/fsharp/MonoMac/MonoMacPlist.xft.xml"/>
 		<Import file="templates/fsharp/MonoMac/MonoMacApplicationDocumentManifest.xft.xml"/>
-		<Import file="templates/fsharp/MonoMac/MonoMacDocument.xpt.xml"/>
 
 		<Import file="templates/fsharp/XamMac/XamMacProject.xpt.xml"/>
 		<Import file="templates/fsharp/XamMac/XamMacProjectEmpty.xpt.xml"/>
-		<Import file="templates/fsharp/XamMac/XamMacViewXib.xft.xml"/>
-		<Import file="templates/fsharp/XamMac/XamMacViewWithControllerXib.xft.xml"/>
-		<Import file="templates/fsharp/XamMac/XamMacWindowXib.xft.xml"/>
-		<Import file="templates/fsharp/XamMac/XamMacWindowWithControllerXib.xft.xml"/>
-		<Import file="templates/fsharp/XamMac/XamMacDocumentWindowXib.xft.xml"/>
-		<Import file="templates/fsharp/XamMac/XamMacEmptyXib.xft.xml"/>
 		<Import file="templates/fsharp/XamMac/XamMacApplicationManifest.xft.xml"/>
 		<Import file="templates/fsharp/XamMac/XamMacPlist.xft.xml"/>
 		<Import file="templates/fsharp/XamMac/XamMacApplicationDocumentManifest.xft.xml"/>
-		<Import file="templates/fsharp/XamMac/XamMacDocument.xpt.xml"/>
-		<Import file="MonoMacLauncher"/>
-		<!--<Import file="restart-monodevelop"/>-->
 	</Runtime>
 
 	<Dependencies>
