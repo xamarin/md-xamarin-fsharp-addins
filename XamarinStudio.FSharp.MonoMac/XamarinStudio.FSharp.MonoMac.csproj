@@ -7,7 +7,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{D2691334-6B77-477C-B2EB-8365C5EC3D50}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>MonoDevelop.FSharp.MonoMac</RootNamespace>
+    <RootNamespace>XamarinStudio.FSharp.MonoMac</RootNamespace>
     <AssemblyName>MonoDevelop.FSharp.MonoMac</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -77,8 +77,8 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="MonoDevelop.FSharp.MonoMac.addin.xml">
-      <LogicalName>MonoDevelop.FSharp.MonoMac.addin.xml</LogicalName>
+    <EmbeddedResource Include="XamarinStudio.FSharp.MonoMac.addin.xml">
+      <LogicalName>XamarinStudio.FSharp.MonoMac.addin.xml</LogicalName>
     </EmbeddedResource>
   </ItemGroup>
 </Project>
