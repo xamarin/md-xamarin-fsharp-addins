@@ -42,18 +42,6 @@
 			              file="templates/fsharp/MonoMac/MonoMacPlist.xft.xml"/>
 			<FileTemplate id="FSharpMonoMacApplicationManifest"
 			              file="templates/fsharp/MonoMac/MonoMacApplicationManifest.xft.xml"/>
-			<FileTemplate id="FSharpMonoMacViewXib"
-			              file="templates/fsharp/MonoMac/MonoMacViewXib.xft.xml"/>
-			<FileTemplate id="FSharpMonoMacViewWithControllerXib"
-			              file="templates/fsharp/MonoMac/MonoMacViewWithControllerXib.xft.xml"/>
-			<FileTemplate id="FSharpMonoMacWindowXib"
-			              file="templates/fsharp/MonoMac/MonoMacWindowXib.xft.xml"/>
-			<FileTemplate id="FSharpMonoMacWindowWithControllerXib"
-			              file="templates/fsharp/MonoMac/MonoMacWindowWithControllerXib.xft.xml"/>
-			<FileTemplate id="FSharpMonoMacDocumentWindowXib"
-			              file="templates/fsharp/MonoMac/MonoMacDocumentWindowXib.xft.xml"/>
-			<FileTemplate id="FSharpMonoMacEmptyXib"
-			              file="templates/fsharp/MonoMac/MonoMacEmptyXib.xft.xml"/>
 			<FileTemplate id="FSharpMonoMacApplicationDocumentManifest"
 			              file = "templates/fsharp/MonoMac/MonoMacApplicationDocumentManifest.xft.xml"/>
 		<!-- </Condition> -->
@@ -63,21 +51,9 @@
 			              file="templates/fsharp/XamMac/XamMacPlist.xft.xml"/>
 			<FileTemplate id="FSharpXamMacApplicationManifest"
 			              file="templates/fsharp/XamMac/XamMacApplicationManifest.xft.xml"/>
-			<FileTemplate id="FSharpXamMacViewXib"
-			              file="templates/fsharp/XamMac/XamMacViewXib.xft.xml"/>
-			<FileTemplate id="FSharpXamMacViewWithControllerXib"
-			              file="templates/fsharp/XamMac/XamMacViewWithControllerXib.xft.xml"/>
-			<FileTemplate id="FSharpXamMacWindowXib"
-			              file="templates/fsharp/XamMac/XamMacWindowXib.xft.xml"/>
-			<FileTemplate id="FSharpXamMacWindowWithControllerXib"
-			              file="templates/fsharp/XamMac/XamMacWindowWithControllerXib.xft.xml"/>
-			<FileTemplate id="FSharpXamMacDocumentWindowXib"
-			              file="templates/fsharp/XamMac/XamMacDocumentWindowXib.xft.xml"/>
-			<FileTemplate id="FSharpXamMacEmptyXib"
-			              file="templates/fsharp/XamMac/XamMacEmptyXib.xft.xml"/>
 			<FileTemplate id="FSharpXamMacApplicationDocumentManifest"
 			              file="templates/fsharp/XamMac/XamMacApplicationDocumentManifest.xft.xml"/>
-	    <!-- </Condition> -->
+		<!-- </Condition> -->
 	</Extension>
 
 	<Extension path = "/MonoDevelop/Ide/ProjectTemplates">
@@ -94,22 +70,5 @@
 			<ProjectTemplate id="FSharpXamMacProjectEmpty"
 					         file="templates/fsharp/XamMac/XamMacProjectEmpty.xpt.xml"/>
 		<!-- </Condition> -->
-	</Extension>
-
-	<Extension path = "/MonoDevelop/ProjectModel/MSBuildItemTypes">
-	    <!-- latest/last MonoMac template; optionally migrate to Xamarin.Mac -->
-	    <!--
-	    <DotNetProjectSubtype guid="{948B3504-5B70-4649-8FE4-BDE1FB46EC69}"
-	                          type="MonoDevelop.MonoMac.MonoMacProject"
-	                          import="$(MSBuildExtensionsPath)\Mono\MonoMac\v0.0\Mono.MonoMac.targets"
-	                          migrationHandler="MonoDevelop.MonoMac.MonoMacToXamMacProjectMigrationHandler"
-	                          migrationRequired="false"/>
-	                          -->
-	    <!-- original Xamarin.Mac template -->
-	    <!--
-	    <DotNetProjectSubtype guid="{42C0BBD9-55CE-4FC1-8D90-A7348ABAFB23}"
-	                          type="MonoDevelop.MonoMac.XamMacProject"
-	                          import="$(MSBuildExtensionsPath)\Xamarin\Mac\v0.0\Xamarin.Mac.targets"/>
-	                          -->
 	</Extension>
 </Addin>
