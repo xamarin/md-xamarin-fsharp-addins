@@ -112,10 +112,4 @@
 	                          import="$(MSBuildExtensionsPath)\Xamarin\Mac\v0.0\Xamarin.Mac.targets"/>
 	                          -->
 	</Extension>
-
-	<Extension path = "/MonoDevelop/ProjectModel/ProjectBindings">
-		<ProjectBinding id = "FSharpMonoMac" class = "MonoDevelop.MonoMac.MonoMacProjectBinding" />
-		<ProjectBinding id = "FSharpXamMac" class = "MonoDevelop.MonoMac.XamMacProjectBinding" />
-	</Extension>
-
 </Addin>
