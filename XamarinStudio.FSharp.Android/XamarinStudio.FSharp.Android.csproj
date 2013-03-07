@@ -8,7 +8,7 @@
     <ProjectGuid>{EF7701BA-D9F7-4B3C-AFD3-1ACBA3F35559}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>XamarinStudio.FSharp.Android</RootNamespace>
-    <AssemblyName>MonoDevelop.FSharp.Android</AssemblyName>
+    <AssemblyName>XamarinStudio.FSharp.Android</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>True</DebugSymbols>

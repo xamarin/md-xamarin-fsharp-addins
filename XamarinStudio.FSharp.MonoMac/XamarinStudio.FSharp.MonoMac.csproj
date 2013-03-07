@@ -8,7 +8,7 @@
     <ProjectGuid>{D2691334-6B77-477C-B2EB-8365C5EC3D50}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>XamarinStudio.FSharp.MonoMac</RootNamespace>
-    <AssemblyName>MonoDevelop.FSharp.MonoMac</AssemblyName>
+    <AssemblyName>XamarinStudio.FSharp.MonoMac</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>True</DebugSymbols>
