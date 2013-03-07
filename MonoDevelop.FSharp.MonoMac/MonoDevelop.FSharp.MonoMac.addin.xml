@@ -1,10 +1,10 @@
 <Addin id          = "FSharp.MonoMac"
        namespace   = "MonoDevelop"
-       name        = "F# support for Xamarin.Mac development"
+       name        = "F# support for MonoMac and Xamarin.Mac development"
        author      = "Atsushi Eno"
        copyright   = "Copyright 2013 Xamarin Inc"
        url         = "http://xamarin.com"
-       description = "F# support MonoMac applications with Xamarin"
+       description = "F# support for MonoMac and Xamarin.Mac application development"
        category    = "Mac Development"
        version     = "4.0">
 
