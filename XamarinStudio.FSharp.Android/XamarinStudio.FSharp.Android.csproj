@@ -41,76 +41,76 @@
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <None Include="templates\fsharp\MonoDroidActivity.xft.xml">
+    <None Include="templates\MonoDroidApplication\AboutAssets.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="templates\fsharp\MonoDroidApplicationProject.xpt.xml">
+    <None Include="templates\MonoDroidApplication\AssemblyInfo.fs">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="templates\fsharp\MonoDroidApplicationProjectLv12.xpt.xml">
+    <None Include="templates\MonoDroidApplication\MainActivity.fs">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="templates\fsharp\MonoDroidApplicationProjectLv15.xpt.xml">
+    <None Include="templates\MonoDroidApplication\Resource.fs">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="templates\fsharp\MonoDroidBroadcastReceiver.xft.xml">
+    <None Include="templates\MonoDroidApplication\AboutResources.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="templates\fsharp\MonoDroidClass.xft.xml">
+    <None Include="templates\MonoDroidApplication\Icon-hd.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="templates\fsharp\MonoDroidFragment.xft.xml">
+    <None Include="templates\MonoDroidApplication\Icon-ld.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="templates\fsharp\MonoDroidInterface.xft.xml">
+    <None Include="templates\MonoDroidApplication\Icon-md.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="templates\fsharp\MonoDroidLibraryProject.xpt.xml">
+    <None Include="templates\MonoDroidApplication\Main.axml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="templates\fsharp\MonoDroidOpenGLProject.xpt.xml">
+    <None Include="templates\OpenGLApplication\GLView1.fs">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="templates\fsharp\MonoDroidView.xft.xml">
+    <None Include="templates\OpenGLApplication\MainActivity.fs">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="templates\fsharp\MonoDroidApplication\AboutAssets.txt">
+    <None Include="templates\OpenGLApplication\Main.axml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="templates\fsharp\MonoDroidApplication\AssemblyInfo.fs">
+    <None Include="templates\OpenGLApplication\Resource.fs">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="templates\fsharp\MonoDroidApplication\MainActivity.fs">
+    <None Include="templates\MonoDroidActivity.xft.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="templates\fsharp\MonoDroidApplication\Resource.fs">
+    <None Include="templates\MonoDroidApplicationProject.xpt.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="templates\fsharp\OpenGLApplication\GLView1.fs">
+    <None Include="templates\MonoDroidApplicationProjectLv12.xpt.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="templates\fsharp\OpenGLApplication\MainActivity.fs">
+    <None Include="templates\MonoDroidApplicationProjectLv15.xpt.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="templates\fsharp\MonoDroidApplication\AboutResources.txt">
+    <None Include="templates\MonoDroidBroadcastReceiver.xft.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="templates\fsharp\MonoDroidApplication\Icon-hd.png">
+    <None Include="templates\MonoDroidClass.xft.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="templates\fsharp\MonoDroidApplication\Icon-ld.png">
+    <None Include="templates\MonoDroidFragment.xft.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="templates\fsharp\MonoDroidApplication\Icon-md.png">
+    <None Include="templates\MonoDroidInterface.xft.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="templates\fsharp\MonoDroidApplication\Main.axml">
+    <None Include="templates\MonoDroidLibraryProject.xpt.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="templates\fsharp\OpenGLApplication\Main.axml">
+    <None Include="templates\MonoDroidOpenGLProject.xpt.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="templates\fsharp\OpenGLApplication\Resource.fs">
+    <None Include="templates\MonoDroidView.xft.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>

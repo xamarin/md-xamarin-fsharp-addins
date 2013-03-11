@@ -18,58 +18,58 @@
 	</Dependencies>
 
 	<Runtime>
-		<Import file = "templates/fsharp/MonoDroidActivity.xft.xml" />
-		<Import file = "templates/fsharp/MonoDroidApplication/AboutAssets.txt" />
-		<Import file = "templates/fsharp/MonoDroidApplication/AboutResources.txt" />
-		<Import file = "templates/fsharp/MonoDroidApplication/MainActivity.fs" />
-		<Import file = "templates/fsharp/MonoDroidApplication/AssemblyInfo.fs" />
-		<Import file = "templates/fsharp/MonoDroidApplication/Resource.fs" />
-		<Import file = "templates/fsharp/MonoDroidApplication/Icon-hd.png" />
-		<Import file = "templates/fsharp/MonoDroidApplication/Icon-ld.png" />
-		<Import file = "templates/fsharp/MonoDroidApplication/Icon-md.png" />
-		<Import file = "templates/fsharp/MonoDroidApplication/Main.axml" />
-		<Import file = "templates/fsharp/MonoDroidApplicationProject.xpt.xml" />
-		<Import file = "templates/fsharp/MonoDroidApplicationProjectLv12.xpt.xml" />
-		<Import file = "templates/fsharp/MonoDroidApplicationProjectLv15.xpt.xml" />
-		<Import file = "templates/fsharp/MonoDroidBroadcastReceiver.xft.xml" />
-		<Import file = "templates/fsharp/MonoDroidClass.xft.xml" />
-		<Import file = "templates/fsharp/MonoDroidFragment.xft.xml" />
-		<Import file = "templates/fsharp/MonoDroidInterface.xft.xml" />
-		<Import file = "templates/fsharp/MonoDroidLibraryProject.xpt.xml" />
-		<Import file = "templates/fsharp/MonoDroidOpenGLProject.xpt.xml" />
-		<Import file = "templates/fsharp/MonoDroidView.xft.xml" />
-		<Import file = "templates/fsharp/OpenGLApplication/MainActivity.fs" />
-		<Import file = "templates/fsharp/OpenGLApplication/GLView1.fs" />
-		<Import file = "templates/fsharp/OpenGLApplication/Main.axml" />
-		<Import file = "templates/fsharp/OpenGLApplication/Resource.fs" />
+		<Import file = "templates/MonoDroidActivity.xft.xml" />
+		<Import file = "templates/MonoDroidApplication/AboutAssets.txt" />
+		<Import file = "templates/MonoDroidApplication/AboutResources.txt" />
+		<Import file = "templates/MonoDroidApplication/MainActivity.fs" />
+		<Import file = "templates/MonoDroidApplication/AssemblyInfo.fs" />
+		<Import file = "templates/MonoDroidApplication/Resource.fs" />
+		<Import file = "templates/MonoDroidApplication/Icon-hd.png" />
+		<Import file = "templates/MonoDroidApplication/Icon-ld.png" />
+		<Import file = "templates/MonoDroidApplication/Icon-md.png" />
+		<Import file = "templates/MonoDroidApplication/Main.axml" />
+		<Import file = "templates/MonoDroidApplicationProject.xpt.xml" />
+		<Import file = "templates/MonoDroidApplicationProjectLv12.xpt.xml" />
+		<Import file = "templates/MonoDroidApplicationProjectLv15.xpt.xml" />
+		<Import file = "templates/MonoDroidBroadcastReceiver.xft.xml" />
+		<Import file = "templates/MonoDroidClass.xft.xml" />
+		<Import file = "templates/MonoDroidFragment.xft.xml" />
+		<Import file = "templates/MonoDroidInterface.xft.xml" />
+		<Import file = "templates/MonoDroidLibraryProject.xpt.xml" />
+		<Import file = "templates/MonoDroidOpenGLProject.xpt.xml" />
+		<Import file = "templates/MonoDroidView.xft.xml" />
+		<Import file = "templates/OpenGLApplication/MainActivity.fs" />
+		<Import file = "templates/OpenGLApplication/GLView1.fs" />
+		<Import file = "templates/OpenGLApplication/Main.axml" />
+		<Import file = "templates/OpenGLApplication/Resource.fs" />
 	</Runtime>
 
 	<Extension path = "/MonoDevelop/Ide/FileTemplates">
 		<FileTemplate id   = "FSharp.MonoDroidView"
-		              file = "templates/fsharp/MonoDroidView.xft.xml"/>
+		              file = "templates/MonoDroidView.xft.xml"/>
 		<FileTemplate id   = "FSharp.MonoDroidActivity"
-		              file = "templates/fsharp/MonoDroidActivity.xft.xml"/>
+		              file = "templates/MonoDroidActivity.xft.xml"/>
 		<FileTemplate id   = "FSharp.MonoDroidBroadcastReceiver"
-		              file = "templates/fsharp/MonoDroidBroadcastReceiver.xft.xml"/>
+		              file = "templates/MonoDroidBroadcastReceiver.xft.xml"/>
 		<FileTemplate id   = "FSharp.MonoDroidClass"
-		              file = "templates/fsharp/MonoDroidClass.xft.xml"/>
+		              file = "templates/MonoDroidClass.xft.xml"/>
 		<FileTemplate id   = "FSharp.MonoDroidFragment"
-		              file = "templates/fsharp/MonoDroidFragment.xft.xml"/>
+		              file = "templates/MonoDroidFragment.xft.xml"/>
 		<FileTemplate id   = "FSharp.MonoDroidInterface"
-		              file = "templates/fsharp/MonoDroidInterface.xft.xml"/>
+		              file = "templates/MonoDroidInterface.xft.xml"/>
 	</Extension>
 
 	<Extension path = "/MonoDevelop/Ide/ProjectTemplates">
 		<ProjectTemplate id   = "FSharp.MonoDroidLibraryProject"
-		                 file = "templates/fsharp/MonoDroidLibraryProject.xpt.xml" />
+		                 file = "templates/MonoDroidLibraryProject.xpt.xml" />
 		<ProjectTemplate id   = "FSharp.MonoDroidApplicationProject"
-		                 file = "templates/fsharp/MonoDroidApplicationProject.xpt.xml"/>
+		                 file = "templates/MonoDroidApplicationProject.xpt.xml"/>
 		<ProjectTemplate id   = "FSharp.MonoDroidApplicationLv12Project"
-		                 file = "templates/fsharp/MonoDroidApplicationProjectLv12.xpt.xml"/>
+		                 file = "templates/MonoDroidApplicationProjectLv12.xpt.xml"/>
 		<ProjectTemplate id   = "FSharp.MonoDroidApplicationLv15Project"
-		                 file = "templates/fsharp/MonoDroidApplicationProjectLv15.xpt.xml"/>
+		                 file = "templates/MonoDroidApplicationProjectLv15.xpt.xml"/>
 		<ProjectTemplate id   = "FSharp.MonoDroidOpenGLProject"
-		                 file = "templates/fsharp/MonoDroidOpenGLProject.xpt.xml"/>
+		                 file = "templates/MonoDroidOpenGLProject.xpt.xml"/>
 	</Extension>
 
 
