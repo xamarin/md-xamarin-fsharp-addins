@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinStudio.FSharp.Android", "XamarinStudio.FSharp.Android\XamarinStudio.FSharp.Android.csproj", "{EF7701BA-D9F7-4B3C-AFD3-1ACBA3F35559}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinStudio.FSharp.MonoMac", "XamarinStudio.FSharp.MonoMac\XamarinStudio.FSharp.MonoMac.csproj", "{D2691334-6B77-477C-B2EB-8365C5EC3D50}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinStudio.FSharp.Mac", "XamarinStudio.FSharp.Mac\XamarinStudio.FSharp.Mac.csproj", "{D2691334-6B77-477C-B2EB-8365C5EC3D50}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinStudio.FSharp.iOS", "XamarinStudio.FSharp.iOS\XamarinStudio.FSharp.iOS.csproj", "{DE977F28-0963-47F9-80A9-0A5C6E32F1A2}"
 EndProject
