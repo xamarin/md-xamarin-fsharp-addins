@@ -92,6 +92,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="templates-project\" />
-    <Folder Include="templates-file\templates-file\" />
+    <Folder Include="templates-file\" />
   </ItemGroup>
 </Project>
