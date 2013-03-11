@@ -1,5 +1,5 @@
 <Addin id          = "FSharp.Android"
-       namespace   = "MonoDevelop"
+       namespace   = "XamarinStudio"
        name        = "F# Android development extension"
        author      = "Atsushi Eno"
        copyright   = "MIT X11"

@@ -1,0 +1,51 @@
+<Addin id          = "FSharp.iOS"
+       namespace   = "XamarinStudio"
+       name        = "F# support for Xamarin.iOS development"
+       author      = "Atsushi Eno"
+       copyright   = "Copyright 2013 Xamarin Inc"
+       url         = "http://xamarin.com"
+       description = "F# support for Xamarin.iOS application development"
+       category    = "iOS Development"
+       version     = "4.0">
+
+	<Runtime>
+		<Import file="templates/fsharp/MonoMac/MonoMacProject.xpt.xml"/>
+		<Import file="templates/fsharp/MonoMac/MonoMacProjectEmpty.xpt.xml"/>
+		<Import file="templates/fsharp/MonoMac/MonoMacApplicationManifest.xft.xml"/>
+		<Import file="templates/fsharp/MonoMac/MonoMacPlist.xft.xml"/>
+		<Import file="templates/fsharp/MonoMac/MonoMacApplicationDocumentManifest.xft.xml"/>
+	</Runtime>
+
+	<Dependencies>
+		<Addin id="Core" version="4.0"/>
+		<Addin id="Ide"  version="4.0"/>
+		<Addin id="MacDev" version="4.0"/>
+		<Addin id="MacPlatform" version="4.0"/>
+		<Addin id="Xamarin.Ide" version="4.0"/>
+		<Addin id="IPhone" version="4.0"/>
+		<!-- FIXME: this needs to be updated to 4.0 -->
+		<Addin id="FSharpBinding" version="3.2.14"/>
+	</Dependencies>
+
+	<ConditionType id="MonoTouchInstalled" type="MonoDevelop.IPhone.MonoTouchInstalledCondition" />
+
+	<Extension path = "/MonoDevelop/Ide/FileTemplates">
+		<!-- <Condition id="MonoTouchInstalled"> -->
+			<FileTemplate id="FSharpMonoMacPlist"
+			              file="templates/fsharp/MonoMac/MonoMacPlist.xft.xml"/>
+			<FileTemplate id="FSharpMonoMacApplicationManifest"
+			              file="templates/fsharp/MonoMac/MonoMacApplicationManifest.xft.xml"/>
+			<FileTemplate id="FSharpMonoMacApplicationDocumentManifest"
+			              file = "templates/fsharp/MonoMac/MonoMacApplicationDocumentManifest.xft.xml"/>
+		<!-- </Condition> -->
+	</Extension>
+
+	<Extension path = "/MonoDevelop/Ide/ProjectTemplates">
+		<!-- <Condition id="MonoTouchInstalled"> -->
+			<ProjectTemplate id="FSharpMonoMacProject"
+					         file="templates/fsharp/MonoMac/MonoMacProject.xpt.xml"/>
+			<ProjectTemplate id="FSharpMonoMacProjectEmpty"
+					         file="templates/fsharp/MonoMac/MonoMacProjectEmpty.xpt.xml"/>
+		<!-- </Condition> -->
+	</Extension>
+</Addin>

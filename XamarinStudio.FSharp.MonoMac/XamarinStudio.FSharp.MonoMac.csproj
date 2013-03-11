@@ -37,12 +37,13 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <Folder Include="templates\" />
     <Folder Include="templates\fsharp\" />
+    <Folder Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="templates\fsharp\MonoMac\MonoMacApplicationDocumentManifest.xft.xml">
@@ -77,8 +78,8 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="XamarinStudio.FSharp.MonoMac.addin.xml">
-      <LogicalName>XamarinStudio.FSharp.MonoMac.addin.xml</LogicalName>
+    <EmbeddedResource Include="XamarinStudio.FSharp.Mac.addin.xml">
+      <LogicalName>XamarinStudio.FSharp.Mac.addin.xml</LogicalName>
     </EmbeddedResource>
   </ItemGroup>
 </Project>

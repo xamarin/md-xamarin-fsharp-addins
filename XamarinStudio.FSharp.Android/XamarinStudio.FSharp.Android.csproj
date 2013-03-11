@@ -37,7 +37,7 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
@@ -116,6 +116,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="templates\" />
+    <Folder Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="XamarinStudio.FSharp.Android.addin.xml">
