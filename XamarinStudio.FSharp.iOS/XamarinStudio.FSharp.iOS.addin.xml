@@ -5,15 +5,27 @@
        copyright   = "Copyright 2013 Xamarin Inc"
        url         = "http://xamarin.com"
        description = "F# support for Xamarin.iOS application development"
-       category    = "iOS Development"
+       category    = "Mobile Development"
        version     = "4.0">
 
 	<Runtime>
-		<Import file="templates/fsharp/MonoMac/MonoMacProject.xpt.xml"/>
-		<Import file="templates/fsharp/MonoMac/MonoMacProjectEmpty.xpt.xml"/>
-		<Import file="templates/fsharp/MonoMac/MonoMacApplicationManifest.xft.xml"/>
-		<Import file="templates/fsharp/MonoMac/MonoMacPlist.xft.xml"/>
-		<Import file="templates/fsharp/MonoMac/MonoMacApplicationDocumentManifest.xft.xml"/>
+		<Import file="templates-file/IOSCollectionView.xft.xml" />
+		<Import file="templates-file/IOSTableView.xft.xml" />
+
+		<Import file="templates-project/Common/Info_iPad.plist.xml" />
+		<Import file="templates-project/Common/Info_iPhone.plist.xml" />
+		<Import file="templates-project/Common/Info_Universal.plist.xml" />
+		<Import file="templates-project/Common/Info_iPad.Storyboard.plist.xml" />
+		<Import file="templates-project/Common/Info_iPhone.Storyboard.plist.xml" />
+		<Import file="templates-project/Common/Info_Universal.Storyboard.plist.xml" />
+		<Import file="templates-project/Common/Main.fs" />
+
+		<Import file="templates-project/Empty/AppDelegate.fs" />
+		<Import file="templates-project/Empty/ProjectIPad.xpt.xml" />
+		<Import file="templates-project/Empty/ProjectIPhone.xpt.xml" />
+		<Import file="templates-project/Empty/ProjectUniversal.xpt.xml" />
+
+		<Import file="templates-project/LibraryProject.xpt.xml" />
 	</Runtime>
 
 	<Dependencies>
@@ -31,21 +43,23 @@
 
 	<Extension path = "/MonoDevelop/Ide/FileTemplates">
 		<!-- <Condition id="MonoTouchInstalled"> -->
-			<FileTemplate id="FSharpMonoMacPlist"
-			              file="templates/fsharp/MonoMac/MonoMacPlist.xft.xml"/>
-			<FileTemplate id="FSharpMonoMacApplicationManifest"
-			              file="templates/fsharp/MonoMac/MonoMacApplicationManifest.xft.xml"/>
-			<FileTemplate id="FSharpMonoMacApplicationDocumentManifest"
-			              file = "templates/fsharp/MonoMac/MonoMacApplicationDocumentManifest.xft.xml"/>
+			<FileTemplate id="FSharpIOSCollectionView"
+			              file="templates-file/IOSCollectionView.xft.xml"/>
+			<FileTemplate id="FSharpIOSTableView"
+			              file="templates-file/IOSTableView.xft.xml"/>
 		<!-- </Condition> -->
 	</Extension>
 
 	<Extension path = "/MonoDevelop/Ide/ProjectTemplates">
 		<!-- <Condition id="MonoTouchInstalled"> -->
-			<ProjectTemplate id="FSharpMonoMacProject"
-					         file="templates/fsharp/MonoMac/MonoMacProject.xpt.xml"/>
-			<ProjectTemplate id="FSharpMonoMacProjectEmpty"
-					         file="templates/fsharp/MonoMac/MonoMacProjectEmpty.xpt.xml"/>
+			<ProjectTemplate id="FSharpIOSEmptyIPadProject"
+					         file="templates-project/Empty/ProjectIPad.xpt.xml"/>
+			<ProjectTemplate id="FSharpIOSEmptyIPhoneProject"
+					         file="templates-project/Empty/ProjectIPhone.xpt.xml"/>
+			<ProjectTemplate id="FSharpIOSEmptyUniversalProject"
+					         file="templates-project/Empty/ProjectUniversal.xpt.xml"/>
+			<ProjectTemplate id="FSharpIOSLibraryProject"
+					         file="templates-project/LibraryProject.xpt.xml"/>
 		<!-- </Condition> -->
 	</Extension>
 </Addin>
