@@ -9,17 +9,17 @@
        version     = "4.0">
 
 	<Runtime>
-		<Import file="templates/fsharp/MonoMac/MonoMacProject.xpt.xml"/>
-		<Import file="templates/fsharp/MonoMac/MonoMacProjectEmpty.xpt.xml"/>
-		<Import file="templates/fsharp/MonoMac/MonoMacApplicationManifest.xft.xml"/>
-		<Import file="templates/fsharp/MonoMac/MonoMacPlist.xft.xml"/>
-		<Import file="templates/fsharp/MonoMac/MonoMacApplicationDocumentManifest.xft.xml"/>
+		<Import file="templates/MonoMac/MonoMacProject.xpt.xml"/>
+		<Import file="templates/MonoMac/MonoMacProjectEmpty.xpt.xml"/>
+		<Import file="templates/MonoMac/MonoMacApplicationManifest.xft.xml"/>
+		<Import file="templates/MonoMac/MonoMacPlist.xft.xml"/>
+		<Import file="templates/MonoMac/MonoMacApplicationDocumentManifest.xft.xml"/>
 
-		<Import file="templates/fsharp/XamMac/XamMacProject.xpt.xml"/>
-		<Import file="templates/fsharp/XamMac/XamMacProjectEmpty.xpt.xml"/>
-		<Import file="templates/fsharp/XamMac/XamMacApplicationManifest.xft.xml"/>
-		<Import file="templates/fsharp/XamMac/XamMacPlist.xft.xml"/>
-		<Import file="templates/fsharp/XamMac/XamMacApplicationDocumentManifest.xft.xml"/>
+		<Import file="templates/XamMac/XamMacProject.xpt.xml"/>
+		<Import file="templates/XamMac/XamMacProjectEmpty.xpt.xml"/>
+		<Import file="templates/XamMac/XamMacApplicationManifest.xft.xml"/>
+		<Import file="templates/XamMac/XamMacPlist.xft.xml"/>
+		<Import file="templates/XamMac/XamMacApplicationDocumentManifest.xft.xml"/>
 	</Runtime>
 
 	<Dependencies>
@@ -39,36 +39,36 @@
 	<Extension path = "/MonoDevelop/Ide/FileTemplates">
 		<!-- <Condition id="MonoMacInstalled"> -->
 			<FileTemplate id="FSharpMonoMacPlist"
-			              file="templates/fsharp/MonoMac/MonoMacPlist.xft.xml"/>
+			              file="templates/MonoMac/MonoMacPlist.xft.xml"/>
 			<FileTemplate id="FSharpMonoMacApplicationManifest"
-			              file="templates/fsharp/MonoMac/MonoMacApplicationManifest.xft.xml"/>
+			              file="templates/MonoMac/MonoMacApplicationManifest.xft.xml"/>
 			<FileTemplate id="FSharpMonoMacApplicationDocumentManifest"
-			              file = "templates/fsharp/MonoMac/MonoMacApplicationDocumentManifest.xft.xml"/>
+			              file = "templates/MonoMac/MonoMacApplicationDocumentManifest.xft.xml"/>
 		<!-- </Condition> -->
 
 		<!-- <Condition id="XamMacInstalled"> -->
 			<FileTemplate id="FSharpXamMacPlist"
-			              file="templates/fsharp/XamMac/XamMacPlist.xft.xml"/>
+			              file="templates/XamMac/XamMacPlist.xft.xml"/>
 			<FileTemplate id="FSharpXamMacApplicationManifest"
-			              file="templates/fsharp/XamMac/XamMacApplicationManifest.xft.xml"/>
+			              file="templates/XamMac/XamMacApplicationManifest.xft.xml"/>
 			<FileTemplate id="FSharpXamMacApplicationDocumentManifest"
-			              file="templates/fsharp/XamMac/XamMacApplicationDocumentManifest.xft.xml"/>
+			              file="templates/XamMac/XamMacApplicationDocumentManifest.xft.xml"/>
 		<!-- </Condition> -->
 	</Extension>
 
 	<Extension path = "/MonoDevelop/Ide/ProjectTemplates">
 		<!-- <Condition id="MonoMacInstalled"> -->
 			<ProjectTemplate id="FSharpMonoMacProject"
-					         file="templates/fsharp/MonoMac/MonoMacProject.xpt.xml"/>
+					         file="templates/MonoMac/MonoMacProject.xpt.xml"/>
 			<ProjectTemplate id="FSharpMonoMacProjectEmpty"
-					         file="templates/fsharp/MonoMac/MonoMacProjectEmpty.xpt.xml"/>
+					         file="templates/MonoMac/MonoMacProjectEmpty.xpt.xml"/>
 		<!-- </Condition> -->
 
 		<!-- <Condition id="XamMacInstalled"> -->
 			<ProjectTemplate id="FSharpXamMacProject"
-					         file="templates/fsharp/XamMac/XamMacProject.xpt.xml"/>
+					         file="templates/XamMac/XamMacProject.xpt.xml"/>
 			<ProjectTemplate id="FSharpXamMacProjectEmpty"
-					         file="templates/fsharp/XamMac/XamMacProjectEmpty.xpt.xml"/>
+					         file="templates/XamMac/XamMacProjectEmpty.xpt.xml"/>
 		<!-- </Condition> -->
 	</Extension>
 </Addin>

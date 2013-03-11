@@ -42,38 +42,37 @@
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <Folder Include="templates\" />
-    <Folder Include="templates\fsharp\" />
     <Folder Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="templates\fsharp\MonoMac\MonoMacApplicationDocumentManifest.xft.xml">
+    <None Include="templates\MonoMac\MonoMacApplicationDocumentManifest.xft.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="templates\fsharp\MonoMac\MonoMacApplicationManifest.xft.xml">
+    <None Include="templates\MonoMac\MonoMacApplicationManifest.xft.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="templates\fsharp\MonoMac\MonoMacPlist.xft.xml">
+    <None Include="templates\MonoMac\MonoMacPlist.xft.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="templates\fsharp\MonoMac\MonoMacProject.xpt.xml">
+    <None Include="templates\MonoMac\MonoMacProject.xpt.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="templates\fsharp\MonoMac\MonoMacProjectEmpty.xpt.xml">
+    <None Include="templates\MonoMac\MonoMacProjectEmpty.xpt.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="templates\fsharp\XamMac\XamMacApplicationDocumentManifest.xft.xml">
+    <None Include="templates\XamMac\XamMacApplicationDocumentManifest.xft.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="templates\fsharp\XamMac\XamMacApplicationManifest.xft.xml">
+    <None Include="templates\XamMac\XamMacApplicationManifest.xft.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="templates\fsharp\XamMac\XamMacPlist.xft.xml">
+    <None Include="templates\XamMac\XamMacPlist.xft.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="templates\fsharp\XamMac\XamMacProject.xpt.xml">
+    <None Include="templates\XamMac\XamMacProject.xpt.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="templates\fsharp\XamMac\XamMacProjectEmpty.xpt.xml">
+    <None Include="templates\XamMac\XamMacProjectEmpty.xpt.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
