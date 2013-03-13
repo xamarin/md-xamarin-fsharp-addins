@@ -1,5 +1,5 @@
 <Addin id          = "FSharp.Mac"
-       namespace   = "XamarinStudio"
+       namespace   = "MonoDevelop"
        name        = "F# support for MonoMac and Xamarin.Mac development"
        author      = "Atsushi Eno"
        copyright   = "Copyright 2013 Xamarin Inc"
