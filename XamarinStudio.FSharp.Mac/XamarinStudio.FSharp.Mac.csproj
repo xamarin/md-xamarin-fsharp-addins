@@ -7,14 +7,14 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{D2691334-6B77-477C-B2EB-8365C5EC3D50}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>XamarinStudio.FSharp.MonoMac</RootNamespace>
+    <RootNamespace>XamarinStudio.FSharp.Mac</RootNamespace>
     <AssemblyName>XamarinStudio.FSharp.Mac</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>True</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>False</Optimize>
-    <OutputPath>..\build\XamarinStudio.FSharp.Mac</OutputPath>
+    <OutputPath>..\bin\Debug\XamarinStudio.FSharp.Mac</OutputPath>
     <DefineConstants>DEBUG;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -28,7 +28,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>none</DebugType>
     <Optimize>True</Optimize>
-    <OutputPath>..\build\XamarinStudio.FSharp.Mac</OutputPath>
+    <OutputPath>..\bin\Release\XamarinStudio.FSharp.Mac</OutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ConsolePause>False</ConsolePause>
