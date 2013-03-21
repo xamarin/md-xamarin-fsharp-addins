@@ -24,6 +24,14 @@
 		<Import file="templates-project/Empty/ProjectIPad.xpt.xml" />
 		<Import file="templates-project/Empty/ProjectIPhone.xpt.xml" />
 		<Import file="templates-project/Empty/ProjectUniversal.xpt.xml" />
+		
+		<Import file="templates-project/SingleView/Common/AppDelegate.fs" />
+		<Import file="templates-project/SingleView/IPad/ViewController.fs" />
+		<Import file="templates-project/SingleView/IPhone/ViewController.fs" />
+		<Import file="templates-project/SingleView/Universal/ViewController.fs" />
+		<Import file="templates-project/SingleView/ProjectIPad.xpt.xml" />
+		<Import file="templates-project/SingleView/ProjectIPhone.xpt.xml" />
+		<Import file="templates-project/SingleView/ProjectUniversal.xpt.xml" />
 
 		<Import file="templates-project/LibraryProject.xpt.xml" />
 	</Runtime>
@@ -52,14 +60,15 @@
 
 	<Extension path = "/MonoDevelop/Ide/ProjectTemplates">
 		<!-- <Condition id="MonoTouchInstalled"> -->
-			<ProjectTemplate id="FSharpIOSEmptyIPadProject"
-					         file="templates-project/Empty/ProjectIPad.xpt.xml"/>
-			<ProjectTemplate id="FSharpIOSEmptyIPhoneProject"
-					         file="templates-project/Empty/ProjectIPhone.xpt.xml"/>
-			<ProjectTemplate id="FSharpIOSEmptyUniversalProject"
-					         file="templates-project/Empty/ProjectUniversal.xpt.xml"/>
-			<ProjectTemplate id="FSharpIOSLibraryProject"
-					         file="templates-project/LibraryProject.xpt.xml"/>
+			<ProjectTemplate id="FSharpIOSEmptyIPadProject" file="templates-project/Empty/ProjectIPad.xpt.xml"/>
+			<ProjectTemplate id="FSharpIOSEmptyIPhoneProject" file="templates-project/Empty/ProjectIPhone.xpt.xml"/>
+			<ProjectTemplate id="FSharpIOSEmptyUniversalProject" file="templates-project/Empty/ProjectUniversal.xpt.xml"/>
+			
+			<ProjectTemplate id="FSharpIOSSingleViewIPadProject" file="templates-project/SingleView/ProjectIPad.xpt.xml"/>
+			<ProjectTemplate id="FSharpIOSSingleViewIPhoneProject" file="templates-project/SingleView/ProjectIPhone.xpt.xml"/>
+			<ProjectTemplate id="FSharpIOSSingleViewUniversalProject" file="templates-project/SingleView/ProjectUniversal.xpt.xml"/>
+			
+			<ProjectTemplate id="FSharpIOSLibraryProject" file="templates-project/LibraryProject.xpt.xml"/>
 		<!-- </Condition> -->
 	</Extension>
 </Addin>
