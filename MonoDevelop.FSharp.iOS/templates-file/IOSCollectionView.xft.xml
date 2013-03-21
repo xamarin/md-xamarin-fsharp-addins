@@ -12,87 +12,63 @@
 	<TemplateFiles>
 		<File name="${Name}Controller.${LanguageExtension}">
 <![CDATA[
-using System;
-using System.Drawing;
-
-using MonoTouch.Foundation;
-using MonoTouch.UIKit;
-
 namespace ${Namespace}
-{
-	public class ${Name}Controller : UICollectionViewController
-	{
-		public ${Name}Controller (UICollectionViewLayout layout) : base (layout)
-		{
-		}
-		
-		public override void DidReceiveMemoryWarning ()
-		{
-			// Releases the view if it doesn't have a superview.
-			base.DidReceiveMemoryWarning ();
-			
-			// Release any cached data, images, etc that aren't in use.
-		}
-		
-		public override void ViewDidLoad ()
-		{
-			base.ViewDidLoad ();
-			
-			// Register any custom UICollectionViewCell classes
-			CollectionView.RegisterClassForCell (typeof (${Name}Cell), ${Name}Cell.Key);
-			
-			// Note: If you use one of the Collection View Cell templates to create a new cell type,
-			// you can register it using the RegisterNibForCell() method like this:
-			//
-			// CollectionView.RegisterNibForCell (MyCollectionViewCell.Nib, MyCollectionViewCell.Key);
-		}
-		
-		public override int NumberOfSections (UICollectionView collectionView)
-		{
-			// TODO: return the actual number of sections
-			return 1;
-		}
-		
-		public override int GetItemsCount (UICollectionView collectionView, int section)
-		{
-			// TODO: return the actual number of items in the section
-			return 1;
-		}
-		
-		public override UICollectionViewCell GetCell (UICollectionView collectionView, NSIndexPath indexPath)
-		{
-			var cell = collectionView.DequeueReusableCell (${Name}Cell.Key, indexPath) as ${Name}Cell;
-			
-			// TODO: populate the cell with the appropriate data based on the indexPath
-			
-			return cell;
-		}
-	}
-}
+
+open System
+open System.Drawing
+
+open MonoTouch.Foundation
+open MonoTouch.UIKit
+
+[<Register ("${Name}Controller")>]
+type ${Name}Controller (layout: UICollectionViewLayout) =
+    inherit UICollectionViewController (layout)
+
+    override x.DidReceiveMemoryWarning () =
+    // Releases the view if it doesn't have a superview.
+        base.DidReceiveMemoryWarning ()
+        // Release any cached data, images, etc that aren't in use.
+
+    override x.ViewDidLoad () =
+        base.ViewDidLoad ()
+
+        // Register any custom UICollectionViewCell classes
+		CollectionView.RegisterClassForCell (typeof (${Name}Cell), ${Name}Cell.Key)
+
+		// Note: If you use one of the Collection View Cell templates to create a new cell type,
+		// you can register it using the RegisterNibForCell() method like this:
+		//
+		// CollectionView.RegisterNibForCell (MyCollectionViewCell.Nib, MyCollectionViewCell.Key)
+
+    override x.NumberOfSections (collectionView: UICollectionView) =
+	// TODO: return the actual number of sections
+		1
+
+	override x.GetItemsCount (collectionView: UICollectionView, section: int) =
+	// TODO: return the actual number of items in the section
+		1
+
+	override x.GetCell (collectionView: UICollectionView, indexPath: NSIndexPath) =
+		let mutable cell = collectionView.DequeueReusableCell (${Name}Cell.Key, indexPath) as ${Name}Cell
+		// TODO: populate the cell with the appropriate data based on the indexPath
+		cell
 ]]>
 		</File>
 		<File name="${Name}Cell.${LanguageExtension}">
 <![CDATA[
-using System;
-using System.Drawing;
-
-using MonoTouch.Foundation;
-using MonoTouch.UIKit;
-
 namespace ${Namespace}
-{
-	public class ${Name}Cell : UICollectionViewCell
-	{
-		public static readonly NSString Key = new NSString ("${Name}Cell");
-		
-		[Export ("initWithFrame:")]
-		public ${Name}Cell (RectangleF frame) : base (frame)
-		{
-			// TODO: add subviews to the ContentView, set various colors, etc.
-			BackgroundColor = UIColor.Cyan;
-		}
-	}
-}
+
+open System
+open System.Drawing
+
+open MonoTouch.Foundation
+open MonoTouch.UIKit
+
+[<Export ("initWithFrame:")>]
+type ${Name}Cell (frame: RectangleF) =
+	inherit UICollectionViewCell (frame)
+	// TODO: add subviews to the ContentView, set various colors, etc.
+		BackgroundColor = UIColor.Cyan
 ]]>
 		</File>
 	</TemplateFiles>
