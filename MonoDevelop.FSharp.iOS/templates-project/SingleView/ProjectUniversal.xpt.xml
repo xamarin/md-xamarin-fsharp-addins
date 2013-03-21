@@ -27,9 +27,9 @@
 			<Files>
 				<Directory name="Resources" />
 				<File name="Info.plist" AddStandardHeader="False" src="../Common/Info_Universal.plist.xml" />
-				<File name="Main.fs" AddStandardHeader="True" src="../Common/Main.fs" />
-				<File name="AppDelegate.fs" AddStandardHeader="True" src="Common/AppDelegate.fs" />
 				<File name="${SafeProjectName}ViewController.fs" AddStandardHeader="True" src="Universal/ViewController.fs" />
+				<File name="AppDelegate.fs" AddStandardHeader="True" src="Common/AppDelegate.fs" />
+				<File name="Main.fs" AddStandardHeader="True" src="../Common/Main.fs" />
 			</Files>
 		</Project>
 	</Combine>

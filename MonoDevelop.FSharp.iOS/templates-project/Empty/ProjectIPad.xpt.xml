@@ -28,8 +28,8 @@
 			<Files>
 				<Directory name="Resources" />
 				<File name="Info.plist" AddStandardHeader="False" src="../Common/Info_iPad.plist.xml" />
-				<File name="Main.fs" AddStandardHeader="True" src="../Common/Main.fs" />
 				<File name="AppDelegate.fs" AddStandardHeader="True" src="AppDelegate.fs" />
+				<File name="Main.fs" AddStandardHeader="True" src="../Common/Main.fs" />
 			</Files>
 		</Project>
 	</Combine>
