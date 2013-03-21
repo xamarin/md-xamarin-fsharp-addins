@@ -9,9 +9,6 @@
        version     = "4.0">
 
 	<Runtime>
-		<Import file="templates-file/IOSCollectionView.xft.xml" />
-		<Import file="templates-file/IOSTableView.xft.xml" />
-
 		<Import file="templates-project/Common/Info_iPad.plist.xml" />
 		<Import file="templates-project/Common/Info_iPhone.plist.xml" />
 		<Import file="templates-project/Common/Info_Universal.plist.xml" />
@@ -48,15 +45,6 @@
 	</Dependencies>
 
 	<ConditionType id="MonoTouchInstalled" type="MonoDevelop.IPhone.MonoTouchInstalledCondition" />
-
-	<Extension path = "/MonoDevelop/Ide/FileTemplates">
-		<!-- <Condition id="MonoTouchInstalled"> -->
-			<FileTemplate id="FSharpIOSCollectionView"
-			              file="templates-file/IOSCollectionView.xft.xml"/>
-			<FileTemplate id="FSharpIOSTableView"
-			              file="templates-file/IOSTableView.xft.xml"/>
-		<!-- </Condition> -->
-	</Extension>
 
 	<Extension path = "/MonoDevelop/Ide/ProjectTemplates">
 		<!-- <Condition id="MonoTouchInstalled"> -->
