@@ -9,9 +9,9 @@ VERSION=4.0
 MDTOOL = $(MONO) 'INSERT_MDROOT/../../mdtool'
 MDROOT = INSERT_MDROOT
 
-ANDROID = XamarinStudio.FSharp.Android/XamarinStudio.FSharp.Android.csproj XamarinStudio.FSharp.Android/XamarinStudio.FSharp.Android.addin.xml
-MAC = XamarinStudio.FSharp.Mac/XamarinStudio.FSharp.Mac.csproj XamarinStudio.FSharp.Mac/XamarinStudio.FSharp.Mac.addin.xml
-IOS = XamarinStudio.FSharp.iOS/XamarinStudio.FSharp.iOS.csproj XamarinStudio.FSharp.iOS/XamarinStudio.FSharp.iOS.addin.xml
+ANDROID = MonoDevelop.FSharp.Android/MonoDevelop.FSharp.Android.csproj MonoDevelop.FSharp.Android/MonoDevelop.FSharp.Android.addin.xml
+MAC = MonoDevelop.FSharp.Mac/MonoDevelop.FSharp.Mac.csproj MonoDevelop.FSharp.Mac/MonoDevelop.FSharp.Mac.addin.xml
+IOS = MonoDevelop.FSharp.iOS/MonoDevelop.FSharp.iOS.csproj MonoDevelop.FSharp.iOS/MonoDevelop.FSharp.iOS.addin.xml
 
 # The default configuration is Debug
 ifeq ($(config),)
@@ -31,21 +31,22 @@ build: $(ANDROID) $(MAC) $(IOS)
 pack: build
 	-rm -rf pack/$(VERSION)/$(config)
 	@-mkdir -p pack/$(VERSION)/$(config)
-	$(MDTOOL) setup pack bin/$(config)/XamarinStudio.FSharp.Android/XamarinStudio.FSharp.Android.dll -d:pack/$(VERSION)/$(config)
-	$(MDTOOL) setup pack bin/$(config)/XamarinStudio.FSharp.Mac/XamarinStudio.FSharp.Mac.dll -d:pack/$(VERSION)/$(config)
-	$(MDTOOL) setup pack bin/$(config)/XamarinStudio.FSharp.iOS/XamarinStudio.FSharp.iOS.dll -d:pack/$(VERSION)/$(config)
+	$(MDTOOL) setup pack bin/$(config)/MonoDevelop.FSharp.Android/MonoDevelop.FSharp.Android.dll -d:pack/$(VERSION)/$(config)
+	$(MDTOOL) setup pack bin/$(config)/MonoDevelop.FSharp.Mac/MonoDevelop.FSharp.Mac.dll -d:pack/$(VERSION)/$(config)
+	$(MDTOOL) setup pack bin/$(config)/MonoDevelop.FSharp.iOS/MonoDevelop.FSharp.iOS.dll -d:pack/$(VERSION)/$(config)
 
 install: pack
-	$(MDTOOL) setup install -y pack/$(VERSION)/$(config)/XamarinStudio.FSharp.Android_$(VERSION).mpack
-	$(MDTOOL) setup install -y pack/$(VERSION)/$(config)/XamarinStudio.FSharp.Mac_$(VERSION).mpack
-	$(MDTOOL) setup install -y pack/$(VERSION)/$(config)/XamarinStudio.FSharp.iOS_$(VERSION).mpack
+	$(MDTOOL) setup install -y pack/$(VERSION)/$(config)/MonoDevelop.FSharp.Android_$(VERSION).mpack
+	$(MDTOOL) setup install -y pack/$(VERSION)/$(config)/MonoDevelop.FSharp.Mac_$(VERSION).mpack
+	$(MDTOOL) setup install -y pack/$(VERSION)/$(config)/MonoDevelop.FSharp.iOS_$(VERSION).mpack
 
 uninstall:
-	$(MDTOOL) setup uninstall XamarinStudio.FSharp.Android XamarinStudio.FSharp.Mac XamarinStudio.FSharp.iOS
+	$(MDTOOL) setup uninstall MonoDevelop.FSharp.Android MonoDevelop.FSharp.Mac MonoDevelop.FSharp.iOS
 
 clean:
 	-rm -rf bin
 	-rm -rf pack
-	-rm -rf XamarinStudio.FSharp.Android/obj
-	-rm -rf XamarinStudio.FSharp.Mac/obj
-	-rm -rf XamarinStudio.FSharp.iOS/obj
+	-rm -rf MonoDevelop.FSharp.Android/obj
+	-rm -rf MonoDevelop.FSharp.Mac/obj
+	-rm -rf MonoDevelop.FSharp.iOS/obj
+	-find . -name "*~" -exec rm -f {} \;

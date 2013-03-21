@@ -7,14 +7,14 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{D2691334-6B77-477C-B2EB-8365C5EC3D50}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>XamarinStudio.FSharp.Mac</RootNamespace>
-    <AssemblyName>XamarinStudio.FSharp.Mac</AssemblyName>
+    <RootNamespace>MonoDevelop.FSharp.Mac</RootNamespace>
+    <AssemblyName>MonoDevelop.FSharp.Mac</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>True</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>False</Optimize>
-    <OutputPath>..\bin\Debug\XamarinStudio.FSharp.Mac</OutputPath>
+    <OutputPath>..\bin\Debug\MonoDevelop.FSharp.Mac</OutputPath>
     <DefineConstants>DEBUG;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -28,7 +28,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>none</DebugType>
     <Optimize>True</Optimize>
-    <OutputPath>..\bin\Release\XamarinStudio.FSharp.Mac</OutputPath>
+    <OutputPath>..\bin\Release\MonoDevelop.FSharp.Mac</OutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ConsolePause>False</ConsolePause>
@@ -77,8 +77,8 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="XamarinStudio.FSharp.Mac.addin.xml">
-      <LogicalName>XamarinStudio.FSharp.Mac.addin.xml</LogicalName>
+    <EmbeddedResource Include="MonoDevelop.FSharp.Mac.addin.xml">
+      <LogicalName>MonoDevelop.FSharp.Mac.addin.xml</LogicalName>
     </EmbeddedResource>
   </ItemGroup>
 </Project>

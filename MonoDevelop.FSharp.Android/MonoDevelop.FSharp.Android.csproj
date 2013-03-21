@@ -7,14 +7,14 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{EF7701BA-D9F7-4B3C-AFD3-1ACBA3F35559}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>XamarinStudio.FSharp.Android</RootNamespace>
-    <AssemblyName>XamarinStudio.FSharp.Android</AssemblyName>
+    <RootNamespace>MonoDevelop.FSharp.Android</RootNamespace>
+    <AssemblyName>MonoDevelop.FSharp.Android</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>True</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>False</Optimize>
-    <OutputPath>..\bin\Debug\XamarinStudio.FSharp.Android</OutputPath>
+    <OutputPath>..\bin\Debug\MonoDevelop.FSharp.Android</OutputPath>
     <DefineConstants>DEBUG;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -28,7 +28,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>none</DebugType>
     <Optimize>True</Optimize>
-    <OutputPath>..\bin\Release\XamarinStudio.FSharp.Android</OutputPath>
+    <OutputPath>..\bin\Release\MonoDevelop.FSharp.Android</OutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ConsolePause>False</ConsolePause>
@@ -119,8 +119,8 @@
     <Folder Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="XamarinStudio.FSharp.Android.addin.xml">
-      <LogicalName>XamarinStudio.FSharp.Android.addin.xml</LogicalName>
+    <EmbeddedResource Include="MonoDevelop.FSharp.Android.addin.xml">
+      <LogicalName>MonoDevelop.FSharp.Android.addin.xml</LogicalName>
     </EmbeddedResource>
   </ItemGroup>
 </Project>

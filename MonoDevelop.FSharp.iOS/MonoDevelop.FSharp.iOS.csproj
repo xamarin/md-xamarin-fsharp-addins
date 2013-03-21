@@ -7,14 +7,14 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{DE977F28-0963-47F9-80A9-0A5C6E32F1A2}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>XamarinStudio.FSharp.iOS</RootNamespace>
-    <AssemblyName>XamarinStudio.FSharp.iOS</AssemblyName>
+    <RootNamespace>MonoDevelop.FSharp.iOS</RootNamespace>
+    <AssemblyName>MonoDevelop.FSharp.iOS</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\bin\Debug\XamarinStudio.FSharp.iOS</OutputPath>
+    <OutputPath>..\bin\Debug\MonoDevelop.FSharp.iOS</OutputPath>
     <DefineConstants>DEBUG;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -23,7 +23,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>none</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\bin\Release\XamarinStudio.FSharp.iOS</OutputPath>
+    <OutputPath>..\bin\Release\MonoDevelop.FSharp.iOS</OutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
@@ -36,8 +36,8 @@
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <EmbeddedResource Include="XamarinStudio.FSharp.iOS.addin.xml">
-      <LogicalName>XamarinStudio.FSharp.iOS.addin.xml</LogicalName>
+    <EmbeddedResource Include="MonoDevelop.FSharp.iOS.addin.xml">
+      <LogicalName>MonoDevelop.FSharp.iOS.addin.xml</LogicalName>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
