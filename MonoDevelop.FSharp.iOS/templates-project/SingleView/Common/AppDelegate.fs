@@ -13,7 +13,7 @@ type AppDelegate () =
 
     let mutable viewController = Unchecked.defaultof<_>
     let mutable window = Unchecked.defaultof<_>
-	
+
     //
     // This method is invoked when the application has loaded and is ready to run. In this 
     // method you should instantiate the window, load the UI into it and then make the window
@@ -28,7 +28,7 @@ type AppDelegate () =
         // If you have defined a root view controller, set it here:
         viewController <- new ${SafeProjectName}ViewController ()
         window.RootViewController <- viewController
-		
+	
         // make the window visible
         window.MakeKeyAndVisible ()
         true

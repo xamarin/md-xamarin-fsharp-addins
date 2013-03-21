@@ -1,8 +1,12 @@
+namespace ${Namespace}
+
 open System
 open MonoTouch.Foundation
 open MonoTouch.UIKit
 
-[<EntryPoint>]
-let main args =
-	UIApplication.Main (args, null, "AppDelegate")
-	0
+module main =
+
+    [<EntryPoint>]
+    let main (args) =
+        UIApplication.Main (args, null, "AppDelegate")
+        0
