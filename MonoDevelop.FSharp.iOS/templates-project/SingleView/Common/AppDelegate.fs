@@ -28,7 +28,7 @@ type AppDelegate () =
         // If you have defined a root view controller, set it here:
         viewController <- new ${SafeProjectName}ViewController ()
         window.RootViewController <- viewController
-	
+
         // make the window visible
         window.MakeKeyAndVisible ()
         true
