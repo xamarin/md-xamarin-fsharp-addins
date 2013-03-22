@@ -37,35 +37,40 @@
 				<Directory name="Resources" />
 				<FileTemplateReference TemplateID="FSharpXamMacApplicationManifest" />
 				<File name="AppDelegate.fs" >
-<![CDATA[namespace ${Namespace}
+<![CDATA[
+namespace ${Namespace}
 
-    open System
-    open System.Drawing
-    open MonoMac.Foundation
-    open MonoMac.AppKit
-    open MonoMac.ObjCRuntime
+open System
+open System.Drawing
 
-    [<MonoMac.Foundation.Register("AppDelegate")>]
-    type AppDelegate () =
-        inherit NSApplicationDelegate ()
+open MonoMac.ObjCRuntime
+open MonoMac.Foundation
+open MonoMac.AppKit
 
-        [<DefaultValue>]
-        val mutable mainWindowController : ${Namespace}.MainWindowController
+[<MonoMac.Foundation.Register("AppDelegate")>]
+type AppDelegate () =
+    inherit NSApplicationDelegate ()
 
-        override x.FinishedLaunching (notification) =
-            let mainWindowController = new ${Namespace}.MainWindowController ()
-            mainWindowController.Window.MakeKeyAndOrderFront (x)
+    [<DefaultValue>]
+    val mutable mainWindowController : ${Namespace}.MainWindowController
+
+    override x.FinishedLaunching (notification) =
+        let mainWindowController = new ${Namespace}.MainWindowController ()
+        mainWindowController.Window.MakeKeyAndOrderFront (x)
 ]]></File>
                 <!-- it must be placed at the end of the files -->
                 <File name="Main.fs"><![CDATA[
-    open System
-    open System.Drawing
-    open MonoMac.Foundation
-    open MonoMac.AppKit
-    open MonoMac.ObjCRuntime
+namespace ${Namespace}
+
+open System
+
+open MonoMac.Foundation
+open MonoMac.AppKit
+
+module main =
 
     [<EntryPoint>]
-    let main args =
+    let main (args) =
         NSApplication.Init ()
         NSApplication.Main (args)
         0
