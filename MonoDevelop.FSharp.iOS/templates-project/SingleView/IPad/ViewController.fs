@@ -19,5 +19,5 @@ type ${SafeProjectName}ViewController () =
         base.ViewDidLoad ()
 
     // Return true for supported orientations
-    override this.ShouldAutorotateToInterfaceOrientation (toInterfaceOrientation) =
+    override this.ShouldAutorotateToInterfaceOrientation (orientation) =
         true
