@@ -3,8 +3,8 @@ namespace ${Namespace}
 open System
 open System.Drawing
 
-open MonoTouch.Foundation
 open MonoTouch.UIKit
+open MonoTouch.Foundation
 
 [<Register ("${SafeProjectName}ViewController")>]
 type ${SafeProjectName}ViewController () =

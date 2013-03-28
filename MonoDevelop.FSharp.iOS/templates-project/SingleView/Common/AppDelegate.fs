@@ -1,8 +1,8 @@
 namespace ${Namespace}
 
 open System
-open MonoTouch.Foundation
 open MonoTouch.UIKit
+open MonoTouch.Foundation
 
 // The UIApplicationDelegate for the application. This class is responsible for launching the 
 // User Interface of the application, as well as listening (and optionally responding) to 
