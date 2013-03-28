@@ -11,7 +11,7 @@ type AppDelegate () =
     let window = new UIWindow (UIScreen.MainScreen.Bounds)
 
     // This method is invoked when the application has loaded and is ready to run.
-    override x.FinishedLaunching (app: UIApplication, options: NSDictionary) =
+    override this.FinishedLaunching (app, options) =
         window.RootViewController <- new ${SafeProjectName}ViewController ()
         window.MakeKeyAndVisible ()
         true
