@@ -15,7 +15,6 @@
 		<Import file="templates-project/Common/Info_iPad.Storyboard.plist.xml" />
 		<Import file="templates-project/Common/Info_iPhone.Storyboard.plist.xml" />
 		<Import file="templates-project/Common/Info_Universal.Storyboard.plist.xml" />
-		<Import file="templates-project/Common/Main.fs" />
 
 		<Import file="templates-project/Empty/AppDelegate.fs" />
 		<Import file="templates-project/Empty/ProjectIPad.xpt.xml" />
