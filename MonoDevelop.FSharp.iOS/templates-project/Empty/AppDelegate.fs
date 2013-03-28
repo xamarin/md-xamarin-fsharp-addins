@@ -11,8 +11,11 @@ open MonoTouch.UIKit
 type AppDelegate () =
     inherit UIApplicationDelegate ()
 
-    //let mutable viewController = Unchecked.defaultof<_>
-    let mutable window = Unchecked.defaultof<_>
+    // create a new window instance based on the screen size
+    let window = new UIWindow (UIScreen.MainScreen.Bounds)
+
+    // create your root view controller
+    //let rootViewController = new MyViewController ()
 
     //
     // This method is invoked when the application has loaded and is ready to run. In this 
@@ -22,14 +25,15 @@ type AppDelegate () =
     // You have 17 seconds to return from this method, or iOS will terminate your application.
     //
     override x.FinishedLaunching (app: UIApplication, options: NSDictionary) =
-        // create a new window instance based on the screen size
-        window <- new UIWindow (UIScreen.MainScreen.Bounds)
-
         // If you have defined a root view controller, set it here:
-        //viewController <- new MyViewController ()
-        //window.RootViewController <- viewController
+        //window.RootViewController <- rootViewController
 
         // make the window visible
         window.MakeKeyAndVisible ()
         true
 
+module Main =
+    [<EntryPoint>]
+    let main (args) =
+        UIApplication.Main (args, null, "AppDelegate")
+        0

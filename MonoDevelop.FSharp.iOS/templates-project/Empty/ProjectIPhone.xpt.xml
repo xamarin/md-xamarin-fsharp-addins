@@ -29,7 +29,6 @@
 				<Directory name="Resources" />
 				<File name="Info.plist" AddStandardHeader="False" src="../Common/Info_iPhone.plist.xml" />
 				<File name="AppDelegate.fs" AddStandardHeader="True" src="AppDelegate.fs" />
-				<File name="Main.fs" AddStandardHeader="True" src="../Common/Main.fs" />
 			</Files>
 		</Project>
 	</Combine>
