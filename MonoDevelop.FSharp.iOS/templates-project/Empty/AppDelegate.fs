@@ -10,7 +10,7 @@ type AppDelegate () =
 
     let window = new UIWindow (UIScreen.MainScreen.Bounds)
 
-    override this.FinishedLaunching (app: UIApplication, options: NSDictionary) =
+    override this.FinishedLaunching (app, options) =
         // If you have defined a root view controller, set it here:
         // window.RootViewController <- new MyViewController ()
         window.MakeKeyAndVisible ()
