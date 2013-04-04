@@ -1,6 +1,6 @@
 <AddinProject appVersion="4.0">
 	<Project platforms="Mac">
-		<AddinFile>bin/Debug/MonoDevelop.FSharp.iOS/MonoDevelop.FSharp.iOS.dll</AddinFile>
+		<AddinFile>bin/Debug/MonoDevelop.FSharp.iOS.dll</AddinFile>
 		<BuildFile>MonoDevelop.FSharp.iOS.csproj</BuildFile>
 		<BuildConfiguration>Debug</BuildConfiguration>
 	</Project>

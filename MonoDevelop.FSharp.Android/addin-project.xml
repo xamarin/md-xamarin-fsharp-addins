@@ -1,11 +1,11 @@
 <AddinProject appVersion="4.0">
 	<Project platforms="Mac">
-		<AddinFile>bin/Debug/MonoDevelop.FSharp.Android/MonoDevelop.FSharp.Android.dll</AddinFile>
+		<AddinFile>bin/Debug/MonoDevelop.FSharp.Android.dll</AddinFile>
 		<BuildFile>MonoDevelop.FSharp.Android.csproj</BuildFile>
 		<BuildConfiguration>Debug</BuildConfiguration>
 	</Project>
 	<Project platforms="Win32">
-		<AddinFile>bin/Debug/MonoDevelop.FSharp.Android/MonoDevelop.FSharp.Android.dll</AddinFile>
+		<AddinFile>bin/Debug/MonoDevelop.FSharp.Android.dll</AddinFile>
 		<BuildFile>MonoDevelop.FSharp.Android.csproj</BuildFile>
 		<BuildConfiguration>Debug</BuildConfiguration>
 	</Project>
