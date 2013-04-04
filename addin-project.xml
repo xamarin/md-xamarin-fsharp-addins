@@ -1,13 +1,13 @@
 <AddinProject appVersion="4.0">
 	<Project platforms="Mac">
-		<AddinFile>bin/MonoDevelop.FSharp.Android/MonoDevelop.FSharp.Android.dll</AddinFile>
-		<AddinFile>bin/MonoDevelop.FSharp.Mac/MonoDevelop.FSharp.Mac.dll</AddinFile>
-		<AddinFile>bin/MonoDevelop.FSharp.iOS/MonoDevelop.FSharp.iOS.dll</AddinFile>
+		<AddinFile>bin/Debug/MonoDevelop.FSharp.Android/MonoDevelop.FSharp.Android.dll</AddinFile>
+		<AddinFile>bin/Debug/MonoDevelop.FSharp.Mac/MonoDevelop.FSharp.Mac.dll</AddinFile>
+		<AddinFile>bin/Debug/MonoDevelop.FSharp.iOS/MonoDevelop.FSharp.iOS.dll</AddinFile>
 		<BuildFile>md-xamarin-fsharp-addins.sln</BuildFile>
 		<BuildConfiguration>Debug</BuildConfiguration>
 	</Project>
 	<Project platforms="Win32">
-		<AddinFile>bin/MonoDevelop.FSharp.Android/MonoDevelop.FSharp.Android.dll</AddinFile>
+		<AddinFile>bin/Debug/MonoDevelop.FSharp.Android/MonoDevelop.FSharp.Android.dll</AddinFile>
 		<BuildFile>md-xamarin-fsharp-addins.sln</BuildFile>
 		<BuildConfiguration>Debug</BuildConfiguration>
 	</Project>
