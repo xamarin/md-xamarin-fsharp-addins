@@ -9,9 +9,9 @@ VERSION=4.0
 MDTOOL = $(MONO) 'INSERT_MDROOT/../../mdtool'
 MDROOT = INSERT_MDROOT
 
-ANDROID = MonoDevelop.FSharp.Android/MonoDevelop.FSharp.Android.csproj MonoDevelop.FSharp.Android/MonoDevelop.FSharp.Android.addin.xml
-MAC = MonoDevelop.FSharp.Mac/MonoDevelop.FSharp.Mac.csproj MonoDevelop.FSharp.Mac/MonoDevelop.FSharp.Mac.addin.xml
-IOS = MonoDevelop.FSharp.iOS/MonoDevelop.FSharp.iOS.csproj MonoDevelop.FSharp.iOS/MonoDevelop.FSharp.iOS.addin.xml
+ANDROID = MonoDevelop.FSharp.Android
+MAC = MonoDevelop.FSharp.Mac
+IOS = MonoDevelop.FSharp.iOS
 
 # The default configuration is Debug
 ifeq ($(config),)
@@ -22,31 +22,31 @@ endif
 
 all: pack
 
-build: $(ANDROID) $(MAC) $(IOS)
-	rm -rf bin/$(config)/packages
-	mkdir -p bin/$(config)/packages
+build: $(ANDROID)/* $(MAC)/* $(IOS)/*
 	(xbuild md-xamarin-fsharp-addins.sln /p:Configuration=$(config))
 
-
 pack: build
-	-rm -rf pack/$(VERSION)/$(config)
-	@-mkdir -p pack/$(VERSION)/$(config)
-	$(MDTOOL) setup pack bin/$(config)/MonoDevelop.FSharp.Android/MonoDevelop.FSharp.Android.dll -d:pack/$(VERSION)/$(config)
-	$(MDTOOL) setup pack bin/$(config)/MonoDevelop.FSharp.Mac/MonoDevelop.FSharp.Mac.dll -d:pack/$(VERSION)/$(config)
-	$(MDTOOL) setup pack bin/$(config)/MonoDevelop.FSharp.iOS/MonoDevelop.FSharp.iOS.dll -d:pack/$(VERSION)/$(config)
+	-rm -rf packages/$(VERSION)/$(config)
+	@-mkdir -p packages/$(VERSION)/$(config)
+	$(MDTOOL) setup pack $(ANDROID)/bin/$(config)/$(ANDROID).dll -d:packages/$(VERSION)/$(config)
+	$(MDTOOL) setup pack $(MAC)/bin/$(config)/$(MAC).dll -d:packages/$(VERSION)/$(config)
+	$(MDTOOL) setup pack $(IOS)/bin/$(config)/$(IOS).dll -d:packages/$(VERSION)/$(config)
 
 install: pack
-	$(MDTOOL) setup install -y pack/$(VERSION)/$(config)/MonoDevelop.FSharp.Android_$(VERSION).mpack
-	$(MDTOOL) setup install -y pack/$(VERSION)/$(config)/MonoDevelop.FSharp.Mac_$(VERSION).mpack
-	$(MDTOOL) setup install -y pack/$(VERSION)/$(config)/MonoDevelop.FSharp.iOS_$(VERSION).mpack
+	$(MDTOOL) setup install -y packages/$(VERSION)/$(config)/$(ANDROID)_$(VERSION).mpack
+	$(MDTOOL) setup install -y packages/$(VERSION)/$(config)/$(MAC)_$(VERSION).mpack
+	$(MDTOOL) setup install -y packages/$(VERSION)/$(config)/$(IOS)_$(VERSION).mpack
 
 uninstall:
-	$(MDTOOL) setup uninstall MonoDevelop.FSharp.Android MonoDevelop.FSharp.Mac MonoDevelop.FSharp.iOS
+	$(MDTOOL) setup uninstall $(ANDROID) $(MAC) $(IOS)
 
 clean:
 	-rm -rf bin
 	-rm -rf pack
-	-rm -rf MonoDevelop.FSharp.Android/obj
-	-rm -rf MonoDevelop.FSharp.Mac/obj
-	-rm -rf MonoDevelop.FSharp.iOS/obj
+	-rm -rf $(ANDROID)/bin
+	-rm -rf $(ANDROID)/obj
+	-rm -rf $(MAC)/bin
+	-rm -rf $(MAC)/obj
+	-rm -rf $(IOS)/bin
+	-rm -rf $(IOS)/obj
 	-find . -name "*~" -exec rm -f {} \;
