@@ -36,7 +36,7 @@
 					<File name="Resource.designer.fs" src="MonoDroidApplication/Resource.fs" />
 					<RawFile name="AboutResources.txt" src="MonoDroidApplication/AboutResources.txt" />
 					<Directory name="layout">
-						<File name="Main.axml" src="../MonoDroidApplication/Main.axml" />
+						<File name="Main.axml" src="MonoDroidApplication/Main.axml" />
 					</Directory>
 					<Directory name="values">
 						<File name="Strings.xml"><![CDATA[<?xml version="1.0" encoding="utf-8"?>

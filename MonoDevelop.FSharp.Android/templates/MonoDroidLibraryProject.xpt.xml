@@ -32,7 +32,7 @@
 			<Files>
 				<Directory name="Resources">
 					<File name="Resource.designer.fs" src="MonoDroidApplication/Resource.fs" />
-					<RawFile name="AboutResources.txt" src="../MonoDroidApplication/AboutResources.txt" />
+					<RawFile name="AboutResources.txt" src="MonoDroidApplication/AboutResources.txt" />
 					<Directory name="values">
 						<File name="Strings.xml"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
 <resources>
