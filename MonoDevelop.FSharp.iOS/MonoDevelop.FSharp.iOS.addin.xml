@@ -4,7 +4,7 @@
        author      = "Atsushi Eno"
        copyright   = "Copyright 2013 Xamarin Inc"
        url         = "http://xamarin.com"
-       description = "F# support for Xamarin.iOS application development"
+       description = "F# support for Xamarin.iOS application development."
        category    = "Mobile Development"
        version     = "4.0">
 
