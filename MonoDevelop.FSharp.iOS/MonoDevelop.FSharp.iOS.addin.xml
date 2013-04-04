@@ -40,7 +40,7 @@
 		<Addin id="Xamarin.Ide" version="4.0"/>
 		<Addin id="IPhone" version="4.0"/>
 		<!-- FIXME: this needs to be updated to 4.0 -->
-		<Addin id="FSharpBinding" version="3.2.14"/>
+		<Addin id="FSharpBinding" version="3.2.15"/>
 	</Dependencies>
 
 	<ConditionType id="MonoTouchInstalled" type="MonoDevelop.IPhone.MonoTouchInstalledCondition" />

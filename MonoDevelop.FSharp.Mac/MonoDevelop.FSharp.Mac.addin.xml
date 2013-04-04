@@ -30,7 +30,7 @@
 		<Addin id="Xamarin.Ide" version="4.0"/>
 		<Addin id="MonoMac" version="4.0"/>
 		<!-- FIXME: this needs to be updated to 4.0 -->
-		<Addin id="FSharpBinding" version="3.2.14"/>
+		<Addin id="FSharpBinding" version="3.2.15"/>
 	</Dependencies>
 
 	<ConditionType id="MonoMacInstalled" type="MonoDevelop.MonoMac.MonoMacInstalledCondition" />
