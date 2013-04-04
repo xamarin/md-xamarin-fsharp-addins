@@ -57,20 +57,10 @@ type AppDelegate () =
     override x.FinishedLaunching (notification) =
         let mainWindowController = new ${Namespace}.MainWindowController ()
         mainWindowController.Window.MakeKeyAndOrderFront (x)
-]]></File>
-                <!-- it must be placed at the end of the files -->
-                <File name="Main.fs"><![CDATA[
-namespace ${Namespace}
-
-open System
-
-open MonoMac.Foundation
-open MonoMac.AppKit
 
 module main =
-
     [<EntryPoint>]
-    let main (args) =
+    let main args =
         NSApplication.Init ()
         NSApplication.Main (args)
         0
