@@ -12,20 +12,20 @@ module MainActivity =
   open Android.Views
   open Android.Widget
 
-  [<Activity (Label = "${ProjectName}", ConfigurationChanges=ConfigChanges.Orientation | ConfigChanges.KeyboardHidden, MainLauncher = true)>]
+  [<Activity (Label = "${ProjectName}", ConfigurationChanges=(ConfigChanges.Orientation ||| ConfigChanges.KeyboardHidden), MainLauncher = true)>]
   type MainActivity () =
     inherit Activity ()
 
-    member x.count:int = 1
-    member x.view:GLView1 = null
+    let mutable count = 1
+    let mutable view:GLView1 = null
 
-    override x:OnCreate (bundle) =
+    override x.OnCreate (bundle) =
 
       base.OnCreate (bundle)
 
       // Create our OpenGL view, and display it
-      view <- new GLView1 (this)
-      SetContentView (view)
+      view <- new GLView1 (x)
+      x.SetContentView (view)
 
     override x.OnPause () =
       // never forget to do this!

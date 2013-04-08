@@ -13,15 +13,30 @@ open Android.Views
 open Android.Content
 open Android.Util
 
+[<AllowNullLiteral>]
 type GLView1 (context:Context) =
   inherit AndroidGameView (context)
 
-  override OnLoad (e:EventArgs) =
+  let square_vertices : single[] = [|
+      -0.5f; -0.5f;
+      0.5f; -0.5f;
+      -0.5f; 0.5f;
+      0.5f; 0.5f
+     |]
+
+  let square_colors : byte[] = [|
+      255uy; 255uy;   0uy; 255uy;
+      0uy;   255uy; 255uy; 255uy;
+      0uy;     0uy;    0uy;  0uy;
+      255uy;   0uy;  255uy; 255uy;
+     |]
+
+  override x.OnLoad (e:EventArgs) =
 
     // This gets called when the drawing surface is ready
     base.OnLoad (e);
     // Run the render loop
-    Run ();
+    x.Run ();
 
     // This method is called everytime the context needs
     // to be recreated. Use it to set any egl-specific settings
@@ -30,34 +45,39 @@ type GLView1 (context:Context) =
     // In this particular case, we demonstrate how to set
     // the graphics mode and fallback in case the device doesn't
     // support the defaults
-    override x:CreateFrameBuffer () =
+    override x.CreateFrameBuffer () =
       // the default GraphicsMode that is set consists of (16, 16, 0, 0, 2, false)
-      try
-        Log.Verbose ("GLCube", "Loading with default settings")
+      let attempt1 =
+        try
+          Log.Verbose ("GLCube", "Loading with default settings") |> ignore
 
-        // if you don't call this, the context won't be created
-        base.CreateFrameBuffer ()
-        return;
-      with
-        | ex:Exception -> Log.Verbose ("GLCube", "{0}", ex)
+          // if you don't call this, the context won't be created
+          base.CreateFrameBuffer ()
+          true
+        with ex ->
+          Log.Verbose ("GLCube", "{0}", ex) |> ignore
+          false
 
-      // this is a graphics setting that sets everything to the lowest mode possible so
-      // the device returns a reliable graphics setting.
-      try
-        Log.Verbose ("GLCube", "Loading with custom Android settings (low mode)")
-        GraphicsMode <- new AndroidGraphicsMode (0, 0, 0, 0, 0, false)
+      if not attempt1 then
+          // this is a graphics setting that sets everything to the lowest mode possible so
+          // the device returns a reliable graphics setting.
+        let attempt2 =
+            try
+              Log.Verbose ("GLCube", "Loading with custom Android settings (low mode)") |> ignore
+              x.GraphicsMode <- new AndroidGraphicsMode (ColorFormat 0, 0, 0, 0, 0, false)
 
-        // if you don't call this, the context won't be created
-        base.CreateFrameBuffer ()
-        return
-      with
-        | ex:Exception -> Log.Verbose ("GLCube", "{0}", ex)
+              // if you don't call this, the context won't be created
+              base.CreateFrameBuffer ()
+              true
+            with ex ->
+              Log.Verbose ("GLCube", "{0}", ex) |> ignore
+              false
 
-      raise new Exception ("Can't load egl, aborting")
-
+        if not attempt2 then
+            failwith "Can't load egl, aborting"
 
     // This gets called on each frame render
-    override OnRenderFrame (e:FrameEventArgs) =
+    override x.OnRenderFrame (e:FrameEventArgs) =
 
       // you only need to call this if you have delegates
       // registered that you want to have called
@@ -79,18 +99,4 @@ type GLView1 (context:Context) =
 
       GL.DrawArrays (All.TriangleStrip, 0, 4)
 
-      SwapBuffers ()
-
-    member square_vertices : float[] = {
-      -0.5f, -0.5f,
-      0.5f, -0.5f,
-      -0.5f, 0.5f, 
-      0.5f, 0.5f,
-      }
-
-    member square_colors : byte[] = {
-      255, 255,   0, 255,
-      0,   255, 255, 255,
-      0,     0,    0,  0,
-      255,   0,  255, 255,
-      }
+      x.SwapBuffers ()
