@@ -54,8 +54,8 @@
 				<Directory name="Assets">
 					<RawFile name="AboutAssets.txt" src="MonoDroidApplication/AboutAssets.txt" />
 				</Directory>
-				<File name="MainActivity.fs" src="OpenGLApplication/MainActivity.fs" />
 				<File name="GLView1.fs" src="OpenGLApplication/GLView1.fs" />
+				<File name="MainActivity.fs" src="OpenGLApplication/MainActivity.fs" />
 			</Files>
 		</Project>
 	</Combine>
