@@ -1,4 +1,3 @@
-module ${ProjectName}.GLView1
 namespace ${Namespace}
 
 open System
@@ -17,14 +16,14 @@ open Android.Util
 type GLView1 (context:Context) =
   inherit AndroidGameView (context)
 
-  let square_vertices : single[] = [|
+  let squareVertices : single[] = [|
       -0.5f; -0.5f;
       0.5f; -0.5f;
       -0.5f; 0.5f;
       0.5f; 0.5f
      |]
 
-  let square_colors : byte[] = [|
+  let squareColors : byte[] = [|
       255uy; 255uy;   0uy; 255uy;
       0uy;   255uy; 255uy; 255uy;
       0uy;     0uy;    0uy;  0uy;
@@ -92,9 +91,9 @@ type GLView1 (context:Context) =
       GL.ClearColor (0.5f, 0.5f, 0.5f, 1.0f)
       GL.Clear (ClearBufferMask.ColorBufferBit)
 
-      GL.VertexPointer (2, All.Float, 0, square_vertices)
+      GL.VertexPointer (2, All.Float, 0, squareVertices)
       GL.EnableClientState (All.VertexArray)
-      GL.ColorPointer (4, All.UnsignedByte, 0, square_colors)
+      GL.ColorPointer (4, All.UnsignedByte, 0, squareColors)
       GL.EnableClientState (All.ColorArray)
 
       GL.DrawArrays (All.TriangleStrip, 0, 4)
