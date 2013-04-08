@@ -9,7 +9,7 @@
 	</TemplateConfiguration>
 	
 	<Actions>
-		<Open filename = "AppDelegate.cs"/>
+		<Open filename = "AppDelegate.fs"/>
 	</Actions>
 	
 	<Combine name = "${ProjectName}" directory = ".">
