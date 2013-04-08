@@ -6,7 +6,7 @@
        url         = "http://xamarin.com"
        description = "F# support for Xamarin.iOS application development."
        category    = "Mobile Development"
-       version     = "4.0">
+       version     = "4.0.1">
 
 	<Runtime>
 		<Import file="templates-project/Common/Info_iPad.plist.xml" />
