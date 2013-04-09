@@ -21,6 +21,7 @@
 namespace ${Namespace}
 
 open System
+open MonoMac.ObjCRuntime
 open MonoMac.Foundation
 open MonoMac.AppKit
 
@@ -29,14 +30,14 @@ type ${Name} (handle : IntPtr) =
     inherit NSWindow (handle)
 
     [<Export ("initWithCoder:")>]
-    new (coder : NSCoder) =
-        NSWindow (coder)
+    new (coder : NSCoder) = { inherit NSWindow (coder) }
 
 ]]></File>
 		<File name="${Name}Controller.cs" ><![CDATA[
 namespace ${Namespace}
 
 open System
+open MonoMac.ObjCRuntime
 open MonoMac.Foundation
 open MonoMac.AppKit
 
@@ -44,8 +45,7 @@ open MonoMac.AppKit
 type ${Name}Controller (handle : IntPtr) =
     inherit NSWindowController (handle)
     
-    new () =
-        NSWindowController ("${Name}")
+    new () = { inherit NSWindowController ("${Name}") }
 
 ]]></File>
 		<File name="${Name}.xib" DefaultExtension=".xib" SuppressAutoOpen="True">
