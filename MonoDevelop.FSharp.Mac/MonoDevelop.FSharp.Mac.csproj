@@ -75,6 +75,12 @@
     <None Include="templates\XamMac\XamMacProjectEmpty.xpt.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="templates\MonoMac\MonoMacWindowWithControllerXib.xft.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="templates\XamMac\XamMacWindowWithControllerXib.xft.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="MonoDevelop.FSharp.Mac.addin.xml">

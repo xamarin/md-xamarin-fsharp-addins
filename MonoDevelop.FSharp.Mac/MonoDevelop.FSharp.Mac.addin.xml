@@ -14,12 +14,14 @@
 		<Import file="templates/MonoMac/MonoMacApplicationManifest.xft.xml"/>
 		<Import file="templates/MonoMac/MonoMacPlist.xft.xml"/>
 		<Import file="templates/MonoMac/MonoMacApplicationDocumentManifest.xft.xml"/>
+		<Import file="templates/MonoMac/MonoMacWindowWithControllerXib.xft.xml"/>
 
 		<Import file="templates/XamMac/XamMacProject.xpt.xml"/>
 		<Import file="templates/XamMac/XamMacProjectEmpty.xpt.xml"/>
 		<Import file="templates/XamMac/XamMacApplicationManifest.xft.xml"/>
 		<Import file="templates/XamMac/XamMacPlist.xft.xml"/>
 		<Import file="templates/XamMac/XamMacApplicationDocumentManifest.xft.xml"/>
+		<Import file="templates/XamMac/XamMacWindowWithControllerXib.xft.xml"/>
 	</Runtime>
 
 	<Dependencies>
@@ -44,6 +46,8 @@
 			              file="templates/MonoMac/MonoMacApplicationManifest.xft.xml"/>
 			<FileTemplate id="FSharpMonoMacApplicationDocumentManifest"
 			              file = "templates/MonoMac/MonoMacApplicationDocumentManifest.xft.xml"/>
+			<FileTemplate id="FSharpMonoMacWindowWithControllerXib"
+			              file = "templates/MonoMac/MonoMacWindowWithControllerXib.xft.xml"/>
 		<!-- </Condition> -->
 
 		<!-- <Condition id="XamMacInstalled"> -->
@@ -53,6 +57,8 @@
 			              file="templates/XamMac/XamMacApplicationManifest.xft.xml"/>
 			<FileTemplate id="FSharpXamMacApplicationDocumentManifest"
 			              file="templates/XamMac/XamMacApplicationDocumentManifest.xft.xml"/>
+			<FileTemplate id="FSharpXamMacWindowWithControllerXib"
+			              file = "templates/XamMac/XamMacWindowWithControllerXib.xft.xml"/>
 		<!-- </Condition> -->
 	</Extension>
 

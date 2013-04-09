@@ -36,6 +36,7 @@
 			<Files>
 				<Directory name="Resources" />
 				<FileTemplateReference TemplateID="FSharpMonoMacApplicationManifest" />
+				<FileTemplateReference TemplateID="FSharpMonoMacWindowWithControllerXib" name="MainWindow" />
 				<File name="AppDelegate.fs" >
 <![CDATA[
 namespace ${Namespace}
