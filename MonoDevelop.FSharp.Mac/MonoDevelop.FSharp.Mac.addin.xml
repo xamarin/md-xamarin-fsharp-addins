@@ -6,7 +6,7 @@
        url         = "http://xamarin.com"
        description = "F# support for MonoMac and Xamarin.Mac application development."
        category    = "Mac Development"
-       version     = "4.0.2">
+       version     = "4.0.3">
 
 	<Runtime>
 		<Import file="templates/MonoMac/MonoMacProject.xpt.xml"/>
