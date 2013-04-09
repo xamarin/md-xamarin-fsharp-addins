@@ -45,8 +45,10 @@ open MonoMac.Foundation
 open MonoMac.AppKit
 
 [<Register("${Name}Controller")>]
-type ${Name}Controller () =
-    inherit NSWindowController ("${Name}")
+type ${Name}Controller =
+    inherit NSWindowController
+
+    new () = { inherit NSWindowController ("${Name}") }
 
     new (handle : IntPtr) = { inherit NSWindowController (handle) }
 ]]></File>
