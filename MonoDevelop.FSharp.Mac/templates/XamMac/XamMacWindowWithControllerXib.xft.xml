@@ -26,8 +26,12 @@ open MonoMac.Foundation
 open MonoMac.AppKit
 
 [<Register ("${Name}")>]
-type ${Name} (handle : IntPtr) =
-    inherit NSWindow (handle)
+type MainWindow =
+    inherit NSWindow
+
+    new () = { inherit NSWindow () }
+
+    new (handle : IntPtr) = { inherit NSWindow (handle) }
 
     [<Export ("initWithCoder:")>]
     new (coder : NSCoder) = { inherit NSWindow (coder) }
@@ -41,10 +45,10 @@ open MonoMac.Foundation
 open MonoMac.AppKit
 
 [<Register("${Name}Controller")>]
-type ${Name}Controller (handle : IntPtr) =
-    inherit NSWindowController (handle)
+type ${Name}Controller () =
+    inherit NSWindowController ("${Name}")
 
-    new () = { inherit NSWindowController ("${Name}") }
+    new (handle : IntPtr) = { inherit NSWindowController (handle) }
 ]]></File>
 		<File name="${Name}.xib" DefaultExtension=".xib" SuppressAutoOpen="True">
 <![CDATA[<?xml version="1.0" encoding="UTF-8"?>
