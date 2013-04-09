@@ -25,7 +25,7 @@ open MonoMac.ObjCRuntime
 open MonoMac.Foundation
 open MonoMac.AppKit
 
-[<Register("${Name}")>]
+[<Register ("${Name}")>]
 type ${Name} (handle : IntPtr) =
     inherit NSWindow (handle)
 

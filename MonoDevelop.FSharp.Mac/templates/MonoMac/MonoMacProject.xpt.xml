@@ -48,7 +48,7 @@ open MonoMac.ObjCRuntime
 open MonoMac.Foundation
 open MonoMac.AppKit
 
-[<MonoMac.Foundation.Register("AppDelegate")>]
+[<Register ("AppDelegate")>]
 type AppDelegate () =
     inherit NSApplicationDelegate ()
 
