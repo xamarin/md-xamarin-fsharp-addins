@@ -17,7 +17,7 @@
 	
 	<!-- Template Content -->
 	<TemplateFiles>
-		<File name="${Name}.${LanguageExtension}" ><![CDATA[
+		<File name="${Name}.fs" ><![CDATA[
 namespace ${Namespace}
 
 open System
@@ -33,7 +33,7 @@ type ${Name} (handle : IntPtr) =
     new (coder : NSCoder) = { inherit NSWindow (coder) }
 
 ]]></File>
-		<File name="${Name}Controller.cs" ><![CDATA[
+		<File name="${Name}Controller.fs" ><![CDATA[
 namespace ${Namespace}
 
 open System
@@ -44,7 +44,7 @@ open MonoMac.AppKit
 [<Register("${Name}Controller")>]
 type ${Name}Controller (handle : IntPtr) =
     inherit NSWindowController (handle)
-    
+
     new () = { inherit NSWindowController ("${Name}") }
 
 ]]></File>
