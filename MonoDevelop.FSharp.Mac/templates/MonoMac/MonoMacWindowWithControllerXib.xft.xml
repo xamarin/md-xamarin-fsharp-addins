@@ -31,7 +31,6 @@ type ${Name} (handle : IntPtr) =
 
     [<Export ("initWithCoder:")>]
     new (coder : NSCoder) = { inherit NSWindow (coder) }
-
 ]]></File>
 		<File name="${Name}Controller.fs" ><![CDATA[
 namespace ${Namespace}
@@ -46,7 +45,6 @@ type ${Name}Controller (handle : IntPtr) =
     inherit NSWindowController (handle)
 
     new () = { inherit NSWindowController ("${Name}") }
-
 ]]></File>
 		<File name="${Name}.xib" DefaultExtension=".xib" SuppressAutoOpen="True">
 <![CDATA[<?xml version="1.0" encoding="UTF-8"?>
