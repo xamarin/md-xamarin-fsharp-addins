@@ -6,7 +6,7 @@
        url         = "http://xamarin.com/android"
        description = "F# support for Xamarin.Android application development."
        category    = "Mobile Development"
-       version     = "4.0.3">
+       version     = "4.0.4">
 
 	<Dependencies>
 		<Addin id="Core" version="4.0.3"/>
