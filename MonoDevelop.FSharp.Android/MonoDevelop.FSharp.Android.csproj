@@ -113,10 +113,20 @@
     <None Include="templates\MonoDroidView.xft.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="templates\UnitTestProject\MainActivity.fs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="templates\UnitTestProject\TestsSample.fs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="templates\MonoDroidUnitTestProject.xpt.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="templates\" />
     <Folder Include="Properties\" />
+    <Folder Include="templates\UnitTestProject\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="MonoDevelop.FSharp.Android.addin.xml">

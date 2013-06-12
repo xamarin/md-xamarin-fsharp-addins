@@ -37,11 +37,14 @@
 		<Import file = "templates/MonoDroidInterface.xft.xml" />
 		<Import file = "templates/MonoDroidLibraryProject.xpt.xml" />
 		<Import file = "templates/MonoDroidOpenGLProject.xpt.xml" />
+		<Import file = "templates/MonoDroidUnitTestProject.xpt.xml" />
 		<Import file = "templates/MonoDroidView.xft.xml" />
 		<Import file = "templates/OpenGLApplication/MainActivity.fs" />
 		<Import file = "templates/OpenGLApplication/GLView1.fs" />
 		<Import file = "templates/OpenGLApplication/Main.axml" />
 		<Import file = "templates/OpenGLApplication/Resource.fs" />
+		<Import file = "templates/UnitTestProject/MainActivity.fs" />
+		<Import file = "templates/UnitTestProject/TestsSample.fs" />
 	</Runtime>
 
 	<Extension path = "/MonoDevelop/Ide/FileTemplates">
@@ -70,6 +73,8 @@
 		                 file = "templates/MonoDroidApplicationProjectLv15.xpt.xml"/>
 		<ProjectTemplate id   = "FSharp.MonoDroidOpenGLProject"
 		                 file = "templates/MonoDroidOpenGLProject.xpt.xml"/>
+		<ProjectTemplate id   = "FSharp.MonoDroidUnitTestProject"
+		                 file = "templates/MonoDroidUnitTestProject.xpt.xml"/>
 	</Extension>
 
 
