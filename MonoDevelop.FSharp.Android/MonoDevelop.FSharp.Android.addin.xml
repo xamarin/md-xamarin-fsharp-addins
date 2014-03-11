@@ -14,7 +14,7 @@
 		<Addin id="Xamarin.Ide" version="4.0.3"/>
 		<Addin id="MonoAndroid" version="4.0.3"/>
 		<!-- FIXME: this needs to be updated to 4.0 -->
-		<Addin id="FSharpBinding" version="3.2.15"/>
+		<Addin id="FSharpBinding" version="3.2.28"/>
 	</Dependencies>
 
 	<Runtime>
@@ -86,6 +86,8 @@
 			<AddImport language="F#" projects="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.FSharp.targets" />
 			<RemoveImport language="F#" projects="$(MSBuildExtensionsPath32)\FSharp\1.0\Microsoft.FSharp.Targets" />
 		    <RemoveImport language="F#" projects="$(MSBuildExtensionsPath32)\..\Microsoft F#\v4.0\Microsoft.FSharp.Targets" />
+		    <RemoveImport language="F#" projects="$(MSBuildExtensionsPath32)\..\Microsoft SDKs\F#\3.1\Framework\v4.0\Microsoft.FSharp.Targets" />
+			<RemoveImport language="F#" projects="$(MSBuildExtensionsPath32)\..\Microsoft SDKs\F#\3.0\Framework\v4.0\Microsoft.FSharp.Targets" />
 		</DotNetProjectSubtype>
 	</Extension>
 </Addin>

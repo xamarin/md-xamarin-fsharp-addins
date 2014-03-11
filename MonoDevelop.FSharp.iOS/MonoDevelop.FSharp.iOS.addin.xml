@@ -6,7 +6,7 @@
        url         = "http://xamarin.com"
        description = "F# support for Xamarin.iOS application development."
        category    = "Mobile Development"
-       version     = "4.0.3">
+       version     = "4.0.4">
 
 	<Runtime>
 		<Import file="templates-project/Common/Info_iPad.plist.xml" />
@@ -40,7 +40,7 @@
 		<Addin id="Xamarin.Ide" version="4.0.3"/>
 		<Addin id="IPhone" version="4.0.3"/>
 		<!-- FIXME: this needs to be updated to 4.0 -->
-		<Addin id="FSharpBinding" version="3.2.15"/>
+		<Addin id="FSharpBinding" version="3.2.28"/>
 	</Dependencies>
 
 	<ConditionType id="MonoTouchInstalled" type="MonoDevelop.IPhone.MonoTouchInstalledCondition" />

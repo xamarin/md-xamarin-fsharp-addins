@@ -9,6 +9,7 @@
 	</TemplateConfiguration>
 	
 	<Actions>
+	<Open filename = "MainActivity.fs"/>
 	</Actions>
 	
 	<Combine name = "${ProjectName}" directory = ".">

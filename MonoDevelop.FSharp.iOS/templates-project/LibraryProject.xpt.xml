@@ -9,7 +9,8 @@
 	</TemplateConfiguration>
 	
 	<Actions>
-	</Actions>
+	<Open filename = "Component1.fs"/>
+  	</Actions>
 	
 	<Combine name = "${ProjectName}" directory = ".">
 		<Options>
